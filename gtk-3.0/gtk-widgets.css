@@ -43,3 +43,32 @@ button-flat, button.link {
 button.link {
 	color: @link_color;
 }
+
+/***************
+ * progressbar *
+ ***************/
+progressbar {
+	font-size: .8em;
+}
+progressbar trough {
+	background-color: shade(@theme_bg_color, .9);
+	border: solid 1px shade(@theme_bg_color, .6);
+	border-bottom-color: white;
+	border-right-color: white;
+	padding: 1px;	
+}
+progressbar progress {
+	background: @theme_selected_bg_color;
+	border-image: url("assets/progress.png") 2 / 2px stretch;
+	color: @theme_selected_fg_color;
+}
+progressbar.horizontal,
+progressbar.horizontal progress,
+progressbar.horizontal trough {
+	min-height: 16px;
+}
+progressbar.vertical,
+progressbar.vertical progress,
+progressbar.vertical trough {
+	min-width: 16px;
+}
