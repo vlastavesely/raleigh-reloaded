@@ -44,12 +44,45 @@ button.link {
 	color: @link_color;
 }
 
+/**************
+ * scrollbars *
+ **************/
+scrollbar button {
+	background-color: @theme_bg_color;
+}
+scrollbar button,
+scrollbar button:hover,
+scrollbar button:active,
+scrollbar button:active:hover,
+scrollbar button:disabled {
+	color: transparent;
+	min-height: 14px;
+	min-width: 14px;
+	padding: 0;
+}
+scrollbar slider {
+	background: @theme_bg_color;
+	border: solid 2px;
+	border-image: url("assets/button.png") 2 / 2px stretch;
+}
+scrollbar slider:hover {
+	background-color: shade(@theme_bg_color, 1.05);
+}
+scrollbar.vertical slider {
+	min-height: 4px;
+	min-width: 10px;
+}
+scrollbar.horizontal slider {
+	min-height: 10px;
+	min-width: 4px;
+}
 
 
 
 
 progressbar trough,
-scale {
+scale,
+scrollbar {
 	background-color: shade(@theme_bg_color, .9);
 	border: solid 1px shade(@theme_bg_color, .6);
 	border-bottom-color: white;
