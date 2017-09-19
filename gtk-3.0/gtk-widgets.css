@@ -109,3 +109,16 @@ progressbar.vertical progress,
 progressbar.vertical trough {
 	min-width: 16px;
 }
+
+/**********
+ * switch *
+ **********/
+switch {
+	background-color: shade(@theme_bg_color, .9);
+	border-image: url("assets/button-pressed.png") 3 / 3px stretch;
+}
+switch slider {
+	background-color: @theme_bg_color;
+	border-image: url("assets/button.png") 3 / 3px stretch;
+	margin: 2px;
+}
