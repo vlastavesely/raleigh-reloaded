@@ -1,0 +1,45 @@
+/***********
+ * general *
+ ***********/
+.background {
+	background-color: @theme_bg_color;
+	color: @theme_fg_color;
+}
+*:disabled {
+	color: darker(@theme_bg_color);
+	text-shadow: 1px 1px @theme_base_color;
+	-gtk-icon-effect: dim;
+}
+
+/***********
+ * buttons *
+ ***********/
+button {
+	border-image: url("assets/button.png") 3 / 3px stretch;
+	padding: 5px;
+}
+button:hover {
+	background-color: shade(@theme_bg_color, 1.05);
+}
+button:active {
+	border-image-source: url("assets/button-active.png");
+}
+button:active:hover,
+button.toggle:checked,
+button.toggle:active:hover {
+	background-color: shade(@theme_bg_color, .9);
+	border-image-source: url("assets/button-pressed.png");
+	padding: 6px 4px 4px 6px;
+}
+button:focus {
+	border-image-source: url("assets/button-focus.png");
+}
+button:disabled {
+	border-image-source: url("assets/button-disabled.png");
+}
+button-flat, button.link {
+	border: 0;
+}
+button.link {
+	color: @link_color;
+}

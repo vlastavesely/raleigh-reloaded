@@ -13,6 +13,6 @@
 
 @define-color theme_text_color #000000;
 
-@define-color link_color #0044a0;
+@define-color link_color #0022ff;
 
 @import url("gtk-widgets.css");
