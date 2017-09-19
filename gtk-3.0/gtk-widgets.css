@@ -6,7 +6,7 @@
 	color: @theme_fg_color;
 }
 *:disabled {
-	color: darker(@theme_bg_color);
+	color: shade(@theme_bg_color, .6);
 	text-shadow: 1px 1px @theme_base_color;
 	-gtk-icon-effect: dim;
 }
@@ -44,6 +44,47 @@ button.link {
 	color: @link_color;
 }
 
+
+
+
+
+progressbar trough,
+scale {
+	background-color: shade(@theme_bg_color, .9);
+	border: solid 1px shade(@theme_bg_color, .6);
+	border-bottom-color: white;
+	border-right-color: white;
+}
+
+
+
+
+/*********
+ * scale *
+ *********/
+scale {
+	margin: 1px;
+}
+scale slider {
+	background: @theme_bg_color;
+}
+scale.horizontal trough {
+	margin: 0 15px;
+}
+scale.vertical trough {
+	margin: 15px 0;
+}
+scale.horizontal slider {
+	background-image: url("assets/scale-slider-horizontal.png");
+	min-height: 14px;
+	min-width: 30px;
+}
+scale.vertical slider {
+	background-image: url("assets/scale-slider-vertical.png");
+	min-height: 30px;
+	min-width: 14px;
+}
+
 /***************
  * progressbar *
  ***************/
@@ -51,10 +92,6 @@ progressbar {
 	font-size: .8em;
 }
 progressbar trough {
-	background-color: shade(@theme_bg_color, .9);
-	border: solid 1px shade(@theme_bg_color, .6);
-	border-bottom-color: white;
-	border-right-color: white;
 	padding: 1px;	
 }
 progressbar progress {
