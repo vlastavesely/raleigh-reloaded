@@ -158,6 +158,16 @@ menu separator {
 	margin: 3px 5px;
 	padding: 1px;
 }
+menuitem > check,
+menuitem > radio,
+menuitem > arrow {
+	min-height: 16px;
+	min-width: 16px;
+}
+menuitem > arrow {
+	margin-left: 10px;
+	-gtk-icon-source: -gtk-icontheme("pan-end-symbolic");
+}
 
 
 
