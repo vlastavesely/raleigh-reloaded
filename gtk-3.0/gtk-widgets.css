@@ -105,6 +105,25 @@ check:indeterminated:disabled {
 	-gtk-icon-source: -gtk-scaled(url("assets/checkbox-mixed-disabled.png"));
 }
 
+/******************
+ * radion buttons *
+ ******************/
+radio,
+.view.cellradio {
+	-gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked.png"));
+	margin: 2px;
+}
+radio:checked {
+	-gtk-icon-source: -gtk-scaled(url("assets/radio-checked.png"));
+}
+radio:disabled {
+	-gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked-disabled.png"));
+}
+radio:checked:disabled {
+	-gtk-icon-source: -gtk-scaled(url("assets/radio-checked-disabled.png"));
+}
+
+
 
 
 
