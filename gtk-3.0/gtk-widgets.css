@@ -132,6 +132,34 @@ entry {
 	padding: 5px;
 }
 
+/*********
+ * menus *
+ *********/
+menubar {
+	border-image: url("assets/button.png") 2 / 2px stretch;
+}
+menu {
+	border-image: url("assets/menu.png") 3 / 3px stretch;
+	padding: 3px;
+}
+menubar > menuitem:hover {
+	background: @theme_selected_bg_color;
+	color: @theme_selected_fg_color;
+}
+menuitem {
+	padding: 5px;
+}
+menuitem:hover {
+	background-color: @theme_selected_bg_color;
+	color: @theme_selected_fg_color;
+}
+menu separator {
+	border-image: url("assets/menu-separator.png") 1 / 1px stretch;
+	margin: 3px 5px;
+	padding: 1px;
+}
+
+
 
 
 
