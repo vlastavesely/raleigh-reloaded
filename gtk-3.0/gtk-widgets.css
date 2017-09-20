@@ -77,6 +77,34 @@ scrollbar.horizontal slider {
 	min-width: 4px;
 }
 
+/**************
+ * checkboxes *
+ **************/
+check, radio {
+	margin: 2px 5px 2px 2px;
+}
+check:disabled, radio:disabled {
+	border-color: shade(@theme_bg_color, .6);
+}
+check {
+	-gtk-icon-source: url("assets/checkbox-unchecked.png");
+}
+check:checked {
+	-gtk-icon-source: url("assets/checkbox-checked.png");
+}
+check:checked:disabled {
+	-gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-disabled.png"));
+}
+check:disabled {
+	-gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked-disabled.png"));
+}
+check:indeterminated {
+	-gtk-icon-source: -gtk-scaled(url("assets/checkbox-mixed.png"));
+}
+check:indeterminated:disabled {
+	-gtk-icon-source: -gtk-scaled(url("assets/checkbox-mixed-disabled.png"));
+}
+
 
 
 
