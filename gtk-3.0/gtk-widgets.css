@@ -216,6 +216,9 @@ scale {
 scale slider {
 	background: @theme_bg_color;
 }
+scale slider:hover {
+	background-color: shade(@theme_bg_color, 1.05);
+}
 scale.horizontal trough {
 	margin: 0 15px;
 }
