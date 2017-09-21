@@ -169,6 +169,23 @@ menuitem > arrow {
 	-gtk-icon-source: -gtk-icontheme("pan-end-symbolic");
 }
 
+/***********
+ * toolbar *
+ ***********/
+toolbar {
+	border-image: url("assets/button.png") 3 / 3px stretch;
+	padding: 3px;
+}
+toolbar button:not(:hover):not(:checked) {
+	border-image: none;
+}
+toolbar separator {
+	border-image: url("assets/toolbar-separator.png") 1 / 1px stretch;
+	margin: 5px;
+	padding: 1px;
+}
+
+
 
 
 
@@ -248,7 +265,6 @@ switch slider {
 	border-image: url("assets/button.png") 3 / 3px stretch;
 	margin: 2px;
 }
-
 
 /************
  * treeview *
