@@ -221,6 +221,8 @@ paned.vertical > separator {
 
 
 
+
+
 progressbar trough,
 scale,
 scrollbar {
@@ -332,17 +334,17 @@ tooltip *, .tooltip * {
 dialog filechooser placessidebar.sidebar.frame .sidebar-row {
 	padding: 5px 10px;
 }
-.frame.sidebar .sidebar-row label {
+dialog filechooser .frame.sidebar .sidebar-row label {
 	padding-left: 7px;
 }
-.path-bar .slider-button,
-.path-bar .slider-button:active {
+dialog filechooser .path-bar .slider-button,
+dialog filechooser .path-bar .slider-button:active {
 	padding: 5px 0;
 }
-.path-bar image {
+dialog filechooser .path-bar image {
 	margin-right: 5px;
 }
-.frame.sidebar separator {
+dialog filechooser .frame.sidebar separator {
 	border-image: url("assets/menu-separator.png") 1 / 1px stretch;
 	margin: 3px 5px;
 	padding: 1px;
