@@ -208,8 +208,16 @@ toolbar separator {
 	padding: 1px;
 }
 
-
-
+/*********
+ * paned *
+ *********/
+paned > separator {
+	background: url("assets/paned-separator-vertical.png") no-repeat center;
+	padding: 2px;
+}
+paned.vertical > separator {
+	background-image: url("assets/paned-separator-horizontal.png");
+}
 
 
 
