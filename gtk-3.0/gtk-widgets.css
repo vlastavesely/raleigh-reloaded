@@ -37,11 +37,16 @@ button:focus {
 button:disabled {
 	border-image-source: url("assets/button-disabled.png");
 }
-button-flat, button.link {
+button-flat, button.link:not(:hover) {
 	border: 0;
 }
 button.link {
 	color: @link_color;
+}
+button.color * {
+	border-image: url("assets/frame-etched-out.png") 2 / 2px stretch;
+	margin: 0 5px;
+	min-height: 16px;
 }
 
 /**************
@@ -271,4 +276,17 @@ switch slider {
  ************/
 treeview.view, iconview.view {
 	background: @theme_base_color;
+}
+
+/************
+ * tooltips *
+ ************/
+tooltip,
+tooltip.background  {
+	background-color: @theme_tooltip_bg_color;
+	border: solid 1px alpha(@theme_tooltip_fg_color, .3);
+	color: alpha(@theme_tooltip_fg_color, .8);
+}
+tooltip *, .tooltip * {
+	background-color: transparent;
 }
