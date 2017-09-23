@@ -100,6 +100,30 @@ scrollbar.horizontal slider {
 	min-height: 10px;
 	min-width: 4px;
 }
+scrollbar.vertical button.up {
+	-gtk-icon-source: url("assets/scrollbar-button-top.png");
+}
+scrollbar.vertical button.down {
+	-gtk-icon-source: url("assets/scrollbar-button-bottom.png");
+}
+scrollbar.horizontal button.up {
+	-gtk-icon-source: url("assets/scrollbar-button-left.png");
+}
+scrollbar.horizontal button.down {
+	-gtk-icon-source: url("assets/scrollbar-button-right.png");
+}
+scrollbar.vertical button.up:disabled {
+	-gtk-icon-source: url("assets/scrollbar-button-disabled-top.png");
+}
+scrollbar.vertical button.down:disabled {
+	-gtk-icon-source: url("assets/scrollbar-button-disabled-bottom.png");
+}
+scrollbar.horizontal button.up:disabled {
+	-gtk-icon-source: url("assets/scrollbar-button-disabled-left.png");
+}
+scrollbar.horizontal button.down:disabled {
+	-gtk-icon-source: url("assets/scrollbar-button-disabled-right.png");
+}
 
 /**************
  * checkboxes *
