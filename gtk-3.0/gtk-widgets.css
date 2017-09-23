@@ -245,6 +245,12 @@ paned.vertical > separator {
 	background-image: url("assets/paned-separator-horizontal.png");
 }
 
+/**********
+ * frames *
+ **********/
+frame > border {
+	border-image: url("assets/frame-etched-out.png") 2 / 2px stretch;
+}
 
 
 
