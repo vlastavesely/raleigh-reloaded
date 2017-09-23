@@ -180,6 +180,22 @@ entry {
 	padding: 5px;
 }
 
+/**************
+ * comboboxes *
+ **************/
+combobox button {
+	background: @theme_bg_color url("assets/combobox-arrow.png") no-repeat center;
+	min-width: 12px;
+	padding: 5px;
+}
+combobox button:disabled {
+	background-image: url("assets/combobox-arrow-disabled.png");
+}
+combobox button:first-child {
+	background-position: right center;
+	padding-right: 26px;
+}
+
 /*********
  * menus *
  *********/
