@@ -397,6 +397,9 @@ dialog filechooser placessidebar.sidebar.frame .sidebar-row {
 dialog filechooser .frame.sidebar .sidebar-row label {
 	padding-left: 7px;
 }
+dialog filechooser stack {
+	background: @theme_bg_color;
+}
 dialog filechooser .path-bar .slider-button,
 dialog filechooser .path-bar .slider-button:active {
 	padding: 5px 0;
@@ -408,4 +411,9 @@ dialog filechooser .frame.sidebar separator {
 	border-image: url("assets/separator-horizontal.png") 1 / 1px stretch;
 	margin: 3px 5px;
 	padding: 1px;
+}
+dialog filechooser actionbar {
+	border: solid 1px shade(@theme_bg_color, .6);
+	margin-top: 5px;
+	padding: 7px;
 }
