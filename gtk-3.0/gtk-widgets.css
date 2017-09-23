@@ -203,7 +203,7 @@ menuitem:hover {
 	color: @theme_selected_fg_color;
 }
 menu separator {
-	border-image: url("assets/menu-separator.png") 1 / 1px stretch;
+	border-image: url("assets/separator-horizontal.png") 1 / 1px stretch;
 	margin: 3px 5px;
 	padding: 1px;
 }
@@ -229,8 +229,20 @@ toolbar button:not(:hover):not(:checked) {
 	border-image: none;
 }
 toolbar separator {
-	border-image: url("assets/toolbar-separator.png") 1 / 1px stretch;
+	border-image: url("assets/separator-horizontal.png") 1 / 1px stretch;
 	margin: 5px;
+	padding: 1px;
+}
+
+/**************
+ * separators *
+ **************/
+separator.horizontal {
+	border-image: url("assets/separator-horizontal.png") 1 / 1px stretch;
+	padding: 1px;
+}
+separator.vertical {
+	border-image: url("assets/separator-vertical.png") 1 / 1px stretch;
 	padding: 1px;
 }
 
@@ -377,7 +389,7 @@ dialog filechooser .path-bar image {
 	margin-right: 5px;
 }
 dialog filechooser .frame.sidebar separator {
-	border-image: url("assets/menu-separator.png") 1 / 1px stretch;
+	border-image: url("assets/separator-horizontal.png") 1 / 1px stretch;
 	margin: 3px 5px;
 	padding: 1px;
 }
