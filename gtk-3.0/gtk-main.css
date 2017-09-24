@@ -15,5 +15,9 @@
 
 @define-color link_color #0022ff;
 
+@define-color theme_info_bg_color #a7c6e1;
+@define-color theme_warning_bg_color #fcaf3e;
+@define-color theme_error_bg_color #f03838;
+
 @import url("gtk-widgets.css");
 @import url("mate-applications.css");

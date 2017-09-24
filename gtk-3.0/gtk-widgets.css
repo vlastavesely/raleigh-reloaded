@@ -388,6 +388,22 @@ tooltip *, .tooltip * {
 	background-color: transparent;
 }
 
+/************
+ * infobars *
+ ************/
+.info {
+	background-color: @theme_info_bg_color;
+}
+.warning {
+	background-color: @theme_warning_bg_color;
+}
+.error {
+	background-color: @theme_error_bg_color;
+}
+.info, .warning, .error {
+	border-image: url("assets/frame-etched-out.png") 3 / 3px stretch;
+}
+
 /***********************
  * file chooser dialog *
  ***********************/
