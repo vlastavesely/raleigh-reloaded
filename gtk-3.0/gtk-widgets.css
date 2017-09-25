@@ -253,6 +253,13 @@ menuitem > arrow {
 	-gtk-icon-source: -gtk-icontheme("pan-end-symbolic");
 }
 
+/*************
+ * Notebboks *
+ *************/
+notebook > stack {
+	border-image: url("assets/notebook.png") 3 / 3px stretch;
+}
+
 /***********
  * toolbar *
  ***********/
