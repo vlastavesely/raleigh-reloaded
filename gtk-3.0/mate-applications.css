@@ -41,3 +41,21 @@
 	background-color: alpha(@theme_selected_bg_color, 0.3);
 	border: 1px solid @theme_selected_bg_color;
 }
+
+/**************
+ * Mate Panel *
+ **************/
+PanelToplevel > grid {
+	border-image: url("assets/button.png") 2 / 2px stretch;
+	margin: -2px -2px 0 -2px;
+	padding: 4px;
+}
+#clock-applet-button {
+	border: 0;
+}
+MatePanelAppletFrameDBus {
+	background: transparent no-repeat left center url("assets/mate-panel-frame.png");
+}
+PanelToplevel menubar {
+	border: 0;
+}
