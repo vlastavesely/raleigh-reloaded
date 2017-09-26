@@ -218,7 +218,7 @@ combobox button:disabled {
 }
 combobox button:first-child {
 	background-position: right center;
-	padding-right: 26px;
+	padding-right: 30px;
 }
 
 /*********
