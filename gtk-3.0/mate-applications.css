@@ -20,6 +20,9 @@
 /********
  * Caja *
  ********/
+.caja-navigation-window toolbar combobox button:not(:hover):not(:checked) {
+	border-image: url("assets/button.png") 3 / 3px stretch;
+}
 .caja-navigation-window tab button,
 .caja-navigation-window tab button:active:hover {
 	padding: 0px;
