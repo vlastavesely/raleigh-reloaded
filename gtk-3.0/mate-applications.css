@@ -66,3 +66,10 @@ MatePanelAppletFrameDBus {
 PanelToplevel menubar {
 	border: 0;
 }
+
+/******************
+ * GvcMixerDialog *
+ ******************/
+GvcMixerDialog border {
+	padding: 10px;
+}

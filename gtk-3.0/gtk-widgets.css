@@ -316,7 +316,7 @@ frame > border {
 
 
 progressbar trough,
-scale,
+scale trough,
 scrollbar {
 	background-color: shade(@theme_bg_color, .9);
 	border: solid 1px shade(@theme_bg_color, .6);
@@ -340,10 +340,10 @@ scale slider:hover {
 	background-color: shade(@theme_bg_color, 1.05);
 }
 scale.horizontal trough {
-	margin: 0 15px;
+	padding: 0 15px;
 }
 scale.vertical trough {
-	margin: 15px 0;
+	padding: 15px 0;
 }
 scale.horizontal slider {
 	background-image: url("assets/scale-slider-horizontal.png");
@@ -354,6 +354,16 @@ scale.vertical slider {
 	background-image: url("assets/scale-slider-vertical.png");
 	min-height: 30px;
 	min-width: 14px;
+}
+scale.horizontal mark indicator {
+	background-color: shade(@theme_bg_color, 0.56);
+	min-height: 8px;
+	min-width: 1px; 
+}
+scale.vertical mark indicator {
+	background-color: shade(@theme_bg_color, 0.56);
+	min-height: 1px;
+	min-width: 8px; 
 }
 
 /***************
