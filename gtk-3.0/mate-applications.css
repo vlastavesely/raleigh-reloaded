@@ -33,7 +33,11 @@
 .caja-navigation-window notebook .view {
 	background: @theme_base_color;
 }
-.caja-navigation-window notebook .view:selected {
+.caja-navigation-window notebook *:selected {
+	background: @theme_bg_color;
+	color: @theme_fg_color;
+}
+.caja-navigation-window notebook *:focus .view:selected {
 	background-color: @theme_selected_bg_color;
 	color: @theme_selected_fg_color;
 }
