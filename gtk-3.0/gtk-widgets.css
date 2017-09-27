@@ -70,7 +70,8 @@ button:active {
 }
 button:active:hover,
 button.toggle:checked,
-button.toggle:active:hover {
+button.toggle:active:hover,
+stackswitcher button:checked {
 	background-color: shade(@theme_bg_color, .9);
 	border-image-source: url("assets/button-pressed.png");
 	padding: 6px 4px 4px 6px;
