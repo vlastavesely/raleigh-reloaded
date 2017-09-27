@@ -260,10 +260,31 @@ menuitem > arrow {
 }
 
 /*************
- * Notebboks *
+ * notebboks *
  *************/
 notebook > stack {
 	border-image: url("assets/notebook.png") 3 / 3px stretch;
+}
+
+/*************************************************************
+ * the fucking shitty GTK3 window's headerbar and decoration *
+ *************************************************************/
+headerbar {
+	background-color: @theme_bg_color;
+	border-bottom: solid 1px shade(@theme_bg_color, .8);
+	padding: 7px;
+}
+decoration {
+	background-color: @theme_bg_color;
+	border: solid 3px @theme_bg_color;
+	border-image: url("assets/button.png") 3 / 3px stretch;
+}
+
+/************
+ * popovers *
+ ************/
+popover {
+	border: solid 1px shade(@theme_bg_color, 0.5);
 }
 
 /***********
