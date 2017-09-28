@@ -287,6 +287,9 @@ decoration {
 popover {
 	border: solid 1px shade(@theme_bg_color, 0.5);
 }
+popover .flat {
+	padding: 5px;
+}
 
 /***********
  * toolbar *
@@ -360,6 +363,9 @@ scale slider {
 }
 scale slider:hover {
 	background-color: shade(@theme_bg_color, 1.05);
+}
+scale trough:disabled {
+	background-color: @theme_bg_color;
 }
 scale.horizontal trough {
 	padding: 0 15px;
@@ -496,6 +502,26 @@ dialog filechooser actionbar {
 	border: solid 1px shade(@theme_bg_color, .6);
 	margin-top: 5px;
 	padding: 7px;
+}
+
+/************************
+ * color chooser dialog *
+ ************************/
+dialog colorchooser colorswatch {
+	border-image: url("assets/frame-etched-out.png") 2 / 2px stretch;
+	padding: 2px;
+}
+dialog colorchooser colorswatch.dark * {
+	color: white;
+}
+dialog colorchooser colorswatch.light * {
+	color: black;
+}
+dialog colorchooser #add-color-button {
+	border-image: url("assets/button.png") 3 / 3px stretch;
+}
+dialog colorchooser colorswatch:selected * {
+	background: transparent;
 }
 
 /*********************
