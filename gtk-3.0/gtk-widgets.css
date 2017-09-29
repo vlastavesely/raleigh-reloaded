@@ -463,6 +463,26 @@ scale.vertical mark indicator {
 }
 
 /***************
+ * color scale *
+ ***************/
+scale.color trough {
+	padding: 0;
+}
+scale.color slider {
+	background-color: transparent;
+}
+scale.color.horizontal slider {
+	background-image: url("assets/color-scale-slider-horizontal.png");
+	min-height: 14px;
+	min-width: 16px;
+}
+scale.color.vertical slider {
+	background-image: url("assets/color-scale-slider-vertical.png");
+	min-height: 16px;
+	min-width: 14px;
+}
+
+/***************
  * progressbar *
  ***************/
 progressbar {
