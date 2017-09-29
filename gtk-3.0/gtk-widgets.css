@@ -408,6 +408,7 @@ frame > border {
 
 
 progressbar trough,
+levelbar trough,
 scale trough,
 scrollbar {
 	background-color: shade(@theme_bg_color, .9);
@@ -484,6 +485,18 @@ progressbar.vertical,
 progressbar.vertical progress,
 progressbar.vertical trough {
 	min-width: 16px;
+}
+
+/************
+ * levelbar *
+ ************/
+levelbar block {
+	margin: 1px;
+	padding: 3px;
+}
+levelbar block.filled {
+	background: @theme_selected_bg_color;
+	border-image: url("assets/progress.png") 2 / 2px stretch;
 }
 
 /**********
