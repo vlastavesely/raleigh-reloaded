@@ -232,6 +232,7 @@ menu {
 	border: solid 2px;
 	border-image: url("assets/menu.png") 2 / 2px stretch;
 	padding: 3px;
+
 }
 menubar > menuitem:hover {
 	background: @theme_selected_bg_color;
@@ -368,7 +369,7 @@ toolbar button:not(:hover):not(:checked) {
 	border-image: none;
 }
 toolbar separator {
-	border-image: url("assets/separator-horizontal.png") 1 / 1px stretch;
+	border-image: url("assets/separator-vertical.png") 1 / 1px stretch;
 	margin: 5px;
 	padding: 1px;
 }
