@@ -266,6 +266,72 @@ menuitem > arrow {
 notebook > stack {
 	border-image: url("assets/notebook.png") 3 / 3px stretch;
 }
+notebook header.top tabs {
+	margin-top: 3px;
+}
+notebook header.bottom tabs {
+	margin-bottom: 3px;
+}
+notebook header.left tabs {
+	margin-left: 3px;
+}
+notebook header.right tabs {
+	margin-right: 3px;
+}
+notebook tab {
+	background: shade(@theme_bg_color, .9);
+	padding: 5px;
+}
+notebook header.top tab {
+	border-image: url("assets/notebook-tab-top.png") 2 / 2px stretch;
+}
+notebook header.bottom tab {
+	border-image: url("assets/notebook-tab-bottom.png") 2 / 2px stretch;
+}
+notebook header.left tab {
+	border-image: url("assets/notebook-tab-left.png") 2 / 2px stretch;
+}
+notebook header.right tab {
+	border-image: url("assets/notebook-tab-right.png") 2 / 2px stretch;
+}
+notebook header tab:checked {
+	background: @theme_bg_color;
+}
+notebook header.top tab:checked {
+	margin-bottom: -1px;
+	margin-top: -3px;
+}
+notebook header.bottom tab:checked {
+	margin-bottom: -3px;
+	margin-top: -2px;
+}
+notebook header.left tab:checked {
+	margin-left: -3px;
+	margin-right: -1px;
+}
+notebook header.right tab:checked {
+	margin-left: -2px;
+	margin-right: -3px;
+}
+notebook header.top tab:checked * {
+	margin-top: -1px;
+}
+notebook header.bottom tab:checked * {
+	margin-bottom: -3px;
+}
+notebook header.left tab:checked * {
+	margin-left: -2px;
+}
+notebook header.right tab:checked * {
+	margin-right: -3px;
+}
+notebook tab button {
+	background-color: transparent;
+	border: 0;
+}
+notebook stack {
+	padding: 2px;
+}
 
 /*************************************************************
  * the fucking shitty GTK3 window's headerbar and decoration *
