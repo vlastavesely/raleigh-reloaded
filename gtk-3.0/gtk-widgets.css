@@ -531,6 +531,10 @@ switch slider {
 	border-image: url("assets/button.png") 3 / 3px stretch;
 	margin: 2px;
 }
+switch:checked {
+	background: @theme_selected_bg_color;
+	color: @theme_selected_fg_color;
+}
 
 /************
  * treeview *
