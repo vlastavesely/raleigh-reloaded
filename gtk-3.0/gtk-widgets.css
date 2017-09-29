@@ -229,9 +229,9 @@ menubar {
 	border-image: url("assets/button.png") 2 / 2px stretch;
 }
 menu {
-	border: solid 2px;
-	border-image: url("assets/menu.png") 2 / 2px stretch;
-	padding: 3px;
+	border: solid 3px;
+	border-image: url("assets/menu.png") 3 / 3px stretch;
+	padding: 2px;
 
 }
 menubar > menuitem:hover {
