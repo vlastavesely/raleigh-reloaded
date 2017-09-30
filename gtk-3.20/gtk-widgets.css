@@ -234,6 +234,9 @@ menu {
 	padding: 2px;
 
 }
+menubar > menuitem {
+	margin: 1px;
+}
 menubar > menuitem:hover {
 	background: @theme_selected_bg_color;
 	color: @theme_selected_fg_color;
@@ -386,6 +389,16 @@ toolbar separator {
 	padding: 1px;
 }
 
+/*************
+ * listboxes *
+ *************/
+list row {
+	padding: 5px;
+}
+list row:hover {
+	background-color: shade(@theme_bg_color, 1.05);
+}
+
 /**************
  * separators *
  **************/
@@ -414,9 +427,8 @@ paned.vertical > separator {
  **********/
 frame > border {
 	border-image: url("assets/frame-etched-out.png") 2 / 2px stretch;
+	padding: 2px;
 }
-
-
 
 
 progressbar trough,
@@ -428,8 +440,6 @@ scrollbar {
 	border-bottom-color: white;
 	border-right-color: white;
 }
-
-
 
 
 /*********
@@ -557,8 +567,8 @@ switch:checked {
 .sidebar,
 scrolledwindow,
 scrolledwindow.frame {
-	border: solid 1px shade(@theme_bg_color, .6);
-	padding: 0;
+	border-image: url("assets/frame-etched-out.png") 3 / 3px stretch;
+	padding: 2px;
 }
 
 /************
