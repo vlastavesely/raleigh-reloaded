@@ -654,6 +654,20 @@ colorchooser .popover {
 	border-image: url("assets/button.png") 3 / 3px stretch;
 }
 
+/****************
+ * print dialog *
+ ****************/
+printdialog > box > box {
+	padding: 5px;
+}
+printdialog box {
+	background: @theme_bg_color;
+}
+printdialog paper {
+	background-color: @theme_base_color;
+	border: solid 1px shade(@theme_bg_color, .6);
+}
+
 /*********************
  * Spinner Animation *
  *********************/
