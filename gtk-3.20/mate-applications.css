@@ -51,6 +51,11 @@
 .caja-notebook stack > box > frame > border {
 	background: @theme_info_bg_color;
 }
+.caja-side-pane notebook scrolledwindow,
+.caja-notebook scrolledwindow {
+	border: 0;
+	padding: 0;
+}
 
 /*********
  * Pluma *
