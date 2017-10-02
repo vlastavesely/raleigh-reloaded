@@ -56,6 +56,10 @@
 	border: 0;
 	padding: 0;
 }
+.caja-desktop-window box,
+.caja-desktop-window scrolledwindow {
+	border: 0;
+}
 
 /*********
  * Pluma *
