@@ -32,6 +32,9 @@
 	text-shadow: 1px 1px @theme_base_color;
 	-gtk-icon-effect: dim;
 }
+.flat:not(:hover):not(:checked) {
+	border: 0;
+}
 
 /*************
  * selection *
@@ -81,9 +84,6 @@ button:focus {
 }
 button:disabled {
 	border-image-source: url("assets/button-disabled.png");
-}
-button-flat, button.link:not(:hover) {
-	border: 0;
 }
 button.link {
 	color: @link_color;
@@ -379,9 +379,6 @@ popover .flat {
 toolbar {
 	border-image: url("assets/button.png") 3 / 3px stretch;
 	padding: 3px;
-}
-toolbar button:not(:hover):not(:checked) {
-	border-image: none;
 }
 toolbar separator {
 	border-image: url("assets/separator-vertical.png") 1 / 1px stretch;
