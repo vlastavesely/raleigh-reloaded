@@ -57,7 +57,8 @@
 	padding: 0;
 }
 .caja-desktop-window box,
-.caja-desktop-window scrolledwindow {
+.caja-desktop-window scrolledwindow,
+.caja-navigation-window statusbar frame {
 	border: 0;
 }
 
@@ -68,9 +69,8 @@
 	min-height: 26px;
 	min-width: 26px;
 }
-.pluma-window statusbar > frame,
-.pluma-window statusbar > label {
-	border-image: url("assets/frame-etched-out.png") 2 / 2px stretch;
+.pluma-window statusbar > *:last-child {
+	padding-right: 5px;
 }
 
 /**************

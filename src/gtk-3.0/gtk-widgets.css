@@ -397,6 +397,16 @@ statusbar button.toggle:checked,
 statusbar button.toggle:active:hover {
 	padding: 3px 1px 1px 3px;
 }
+statusbar frame,
+statusbar > label {
+	border-image: url("assets/statusbar-frame.png") 2 / 2px stretch;
+}
+statusbar frame > border {
+	border: 0;
+}
+statusbar {
+	margin: 0 -9px;
+}
 
 /*************
  * listboxes *
