@@ -68,6 +68,10 @@
 	min-height: 26px;
 	min-width: 26px;
 }
+.pluma-window statusbar > frame,
+.pluma-window statusbar > label {
+	border-image: url("assets/frame-etched-out.png") 2 / 2px stretch;
+}
 
 /**************
  * Mate Panel *

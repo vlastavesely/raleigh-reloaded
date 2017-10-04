@@ -387,6 +387,18 @@ toolbar separator {
 }
 
 /*************
+ * statusbar *
+ *************/
+statusbar button {
+	padding: 2px;
+}
+statusbar button:active:hover,
+statusbar button.toggle:checked,
+statusbar button.toggle:active:hover {
+	padding: 3px 1px 1px 3px;
+}
+
+/*************
  * listboxes *
  *************/
 list row {
