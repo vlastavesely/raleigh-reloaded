@@ -94,6 +94,16 @@ wnck-tasklist button.flat:not(:hover):not(:checked) {
 	border-image: url("assets/button.png") 2 / 2px stretch;
 }
 
+/*****************
+ * Mate Terminal *
+ *****************/
+.mate-terminal notebook stack {
+	padding: 0;
+}
+.mate-terminal notebook header {
+	padding-bottom: 2px;
+}
+
 /******************
  * GvcMixerDialog *
  ******************/
