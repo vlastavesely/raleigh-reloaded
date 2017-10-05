@@ -110,3 +110,10 @@ wnck-tasklist button.flat:not(:hover):not(:checked) {
 GvcMixerDialog border {
 	padding: 10px;
 }
+
+/***************
+ * Lock Screen *
+ ***************/
+.lock-dialog notebook > stack {
+	border: 0;
+}
