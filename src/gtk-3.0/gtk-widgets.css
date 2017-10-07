@@ -269,6 +269,11 @@ menuitem > arrow {
  *************/
 notebook > stack {
 	border-image: url("assets/notebook.png") 3 / 3px stretch;
+	padding: 2px;
+}
+notebook > stack:first-child {
+	border: none;
+	padding: 0;
 }
 notebook header.top tabs {
 	margin-top: 3px;
@@ -332,9 +337,6 @@ notebook header.right tab:checked * {
 notebook tab button {
 	background-color: transparent;
 	border: 0;
-}
-notebook stack {
-	padding: 2px;
 }
 
 /*************************************************************
