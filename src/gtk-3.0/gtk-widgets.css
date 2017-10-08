@@ -47,7 +47,8 @@ selection,
 }
 selection:focus,
 *:selected:focus,
-.view:selected:focus {
+.view:selected:focus,
+*:focus *:selected {
 	background-color: @theme_selected_bg_color;
 	color: @theme_selected_fg_color;
 }
