@@ -98,18 +98,20 @@ button.color * {
 /**************
  * scrollbars *
  **************/
-scrollbar button {
-	background-color: @theme_bg_color;
-}
 scrollbar button,
 scrollbar button:hover,
 scrollbar button:active,
 scrollbar button:active:hover,
 scrollbar button:disabled {
-	color: transparent;
+	background-color: @theme_bg_color no-repeat;
+	color: black;
+	font-size: 8px;
 	min-height: 14px;
 	min-width: 14px;
 	padding: 0;
+}
+scrollbar button:disabled {
+	color: shade(@theme_bg_color, .6);
 }
 scrollbar slider {
 	background: @theme_bg_color;
