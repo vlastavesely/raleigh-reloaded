@@ -382,6 +382,7 @@ popover .flat {
  * toolbar *
  ***********/
 toolbar {
+	background: @theme_bg_color;
 	border-image: url("assets/button.png") 3 / 3px stretch;
 	padding: 3px;
 }
