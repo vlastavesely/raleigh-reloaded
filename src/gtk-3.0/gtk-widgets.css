@@ -103,7 +103,7 @@ scrollbar button:hover,
 scrollbar button:active,
 scrollbar button:active:hover,
 scrollbar button:disabled {
-	background-color: @theme_bg_color no-repeat;
+	background: @theme_bg_color no-repeat;
 	color: black;
 	font-size: 8px;
 	min-height: 14px;
@@ -465,7 +465,7 @@ buttonbox.horizontal button:first-child {
 	margin-left: 0;
 }
 buttonbox.horizontal button:last-child {
-	margin-lright: 0;
+	margin-right: 0;
 }
 
 progressbar trough,
