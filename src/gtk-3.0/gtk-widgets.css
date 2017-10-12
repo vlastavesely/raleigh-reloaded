@@ -338,6 +338,18 @@ notebook tab button {
 	border: 0;
 }
 
+/************
+ * expander *
+ ************/
+expander arrow {
+	min-width: 16px;
+	min-height: 16px;
+	-gtk-icon-source: -gtk-icontheme("pan-end-symbolic");
+}
+expander arrow:checked {
+	-gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
+}
+
 /*************************************************************
  * the fucking shitty GTK3 window's headerbar and decoration *
  *************************************************************/
