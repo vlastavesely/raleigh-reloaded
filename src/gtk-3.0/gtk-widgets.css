@@ -69,9 +69,7 @@ button {
 button:hover {
 	background-color: shade(@theme_bg_color, 1.05);
 }
-button:active {
-	border-image-source: url("assets/button-active.png");
-}
+button:active,
 button:active:hover,
 button.toggle:checked,
 button.toggle:active:hover,
