@@ -158,6 +158,12 @@ scrollbar.horizontal button.down:disabled {
 check, radio {
 	margin: 2px 5px 2px 2px;
 }
+checkbutton:hover, radiobutton:hover {
+	background-color: shade(@theme_bg_color, 1.05);
+}
+checkbutton label, radiobutton label {
+	padding-right: 3px;
+}
 check:disabled, radio:disabled {
 	border-color: shade(@theme_bg_color, .6);
 }
