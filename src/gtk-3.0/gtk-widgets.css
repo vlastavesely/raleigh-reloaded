@@ -234,7 +234,8 @@ combobox button:first-child arrow {
 menubar {
 	border-image: url("assets/button.png") 2 / 2px stretch;
 }
-menubar decoration {
+menubar decoration,
+.popup decoration {
 	border: 0;
 }
 menu {
