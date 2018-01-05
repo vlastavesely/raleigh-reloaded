@@ -234,6 +234,9 @@ combobox button:first-child arrow {
 menubar {
 	border-image: url("assets/button.png") 2 / 2px stretch;
 }
+menubar decoration {
+	border: 0;
+}
 menu {
 	border: solid 3px;
 	border-image: url("assets/menu.png") 3 / 3px stretch;
@@ -486,7 +489,6 @@ buttonbox.horizontal button:first-child {
 buttonbox.horizontal button:last-child {
 	margin-right: 0;
 }
-
 progressbar trough,
 levelbar trough,
 scale trough,
@@ -496,7 +498,6 @@ scrollbar {
 	border-bottom-color: white;
 	border-right-color: white;
 }
-
 
 /*********
  * scale *
@@ -638,6 +639,9 @@ tooltip.background  {
 }
 tooltip *, .tooltip * {
 	background-color: transparent;
+}
+tooltip decoration {
+	border: 0;
 }
 
 /************
