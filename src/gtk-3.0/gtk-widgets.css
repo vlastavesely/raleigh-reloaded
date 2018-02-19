@@ -555,6 +555,7 @@ scale.color trough {
 }
 scale.color slider {
 	background-color: transparent;
+	border: 0;
 }
 scale.color.horizontal slider {
 	background-image: url("assets/color-scale-slider-horizontal.png");
