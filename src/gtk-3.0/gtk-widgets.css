@@ -88,8 +88,8 @@ button.link {
 }
 button.color * {
 	border-image: url("assets/frame-etched-out.png") 2 / 2px stretch;
-	margin: 0 5px;
-	min-height: 16px;
+	margin: 0 .3em;
+	min-height: 1.2em;
 }
 
 /**************
@@ -156,6 +156,8 @@ scrollbar.horizontal button.down:disabled {
  **************/
 check, radio {
 	margin: .3em .4em .3em .3em;
+	min-height: 1em;
+	min-width: 1em;
 }
 checkbutton:hover, radiobutton:hover {
 	background-color: shade(@theme_bg_color, 1.05);
@@ -192,6 +194,8 @@ radio,
 .view.cellradio {
 	-gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked.png"));
 	margin: .3em .4em .3em .3em;
+	min-height: 1em;
+	min-width: 1em;
 }
 radio:checked {
 	-gtk-icon-source: -gtk-scaled(url("assets/radio-checked.png"));
@@ -264,9 +268,10 @@ menu separator {
 }
 menuitem > check,
 menuitem > radio,
-menuitem > arrow {
-	min-height: 16px;
-	min-width: 16px;
+menuitem > arrow,
+menuitem > image {
+	min-height: 1em;
+	min-width: 1em;
 }
 menuitem > arrow {
 	margin-left: 10px;
@@ -481,7 +486,7 @@ box > frame {
  * button box *
  **************/
 buttonbox.horizontal button {
-	margin: 3px 5px;
+	margin: .2em .4em;
 }
 buttonbox.horizontal button:first-child {
 	margin-left: 0;
@@ -506,7 +511,8 @@ scale {
 	margin: 1px;
 }
 scale slider {
-	background: @theme_bg_color;
+	background: @theme_bg_color no-repeat center;
+	border-image: url("assets/scale-slider-border.png") 2 / 2px stretch;
 }
 scale slider:hover {
 	background-color: shade(@theme_bg_color, 1.05);
@@ -515,20 +521,20 @@ scale trough:disabled {
 	background-color: @theme_bg_color;
 }
 scale.horizontal trough {
-	padding: 0 15px;
+	padding: 0 1.2em;
 }
 scale.vertical trough {
-	padding: 15px 0;
+	padding: 1.2em 0;
 }
 scale.horizontal slider {
 	background-image: url("assets/scale-slider-horizontal.png");
-	min-height: 14px;
-	min-width: 30px;
+	min-height: 1em;
+	min-width: 2.4em;
 }
 scale.vertical slider {
 	background-image: url("assets/scale-slider-vertical.png");
-	min-height: 30px;
-	min-width: 14px;
+	min-height: 2.4em;
+	min-width: 1em;
 }
 scale.horizontal mark indicator {
 	background-color: shade(@theme_bg_color, 0.56);
@@ -578,12 +584,12 @@ progressbar progress {
 progressbar.horizontal,
 progressbar.horizontal progress,
 progressbar.horizontal trough {
-	min-height: 16px;
+	min-height: 1.3em;
 }
 progressbar.vertical,
 progressbar.vertical progress,
 progressbar.vertical trough {
-	min-width: 16px;
+	min-width: 1.3em;
 }
 
 /************
@@ -665,10 +671,10 @@ tooltip decoration {
  * file chooser dialog *
  ***********************/
 dialog filechooser placessidebar.sidebar.frame .sidebar-row {
-	padding: 5px 10px;
+	padding: .3em 1em;
 }
 dialog filechooser .frame.sidebar .sidebar-row label {
-	padding-left: 7px;
+	padding-left: .8em;
 }
 dialog filechooser placessidebar button {
 	background: transparent;
