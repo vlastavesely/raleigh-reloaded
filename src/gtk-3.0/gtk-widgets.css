@@ -251,7 +251,7 @@ menubar > menuitem:hover {
 	color: @theme_selected_fg_color;
 }
 menuitem {
-	padding: 5px;
+	padding: .3em;
 }
 menuitem:hover {
 	background-color: @theme_selected_bg_color;
@@ -259,7 +259,7 @@ menuitem:hover {
 }
 menu separator {
 	border-image: url("assets/separator-horizontal.png") 1 / 1px stretch;
-	margin: 3px 5px;
+	margin: .2em .4em;
 	padding: 1px;
 }
 menuitem > check,
@@ -294,7 +294,7 @@ notebook header.right tabs {
 }
 notebook tab {
 	background: shade(@theme_bg_color, .9);
-	padding: 5px;
+	padding: .4em;
 }
 notebook header.top tab {
 	border-image: url("assets/notebook-tab-top.png") 2 / 2px stretch;
@@ -609,7 +609,7 @@ switch slider {
 	background-color: @theme_bg_color;
 	border-image: url("assets/button.png") 3 / 3px stretch;
 	margin: 2px;
-	padding: .5em;
+	padding: .3em;
 }
 switch:checked {
 	background: @theme_selected_bg_color;
