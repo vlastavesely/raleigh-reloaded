@@ -93,7 +93,9 @@ PanelToplevel > grid {
 	border: 0;
 }
 MatePanelAppletFrameDBus {
-	background: transparent no-repeat left center url("assets/mate-panel-frame.png");
+	background: transparent url("assets/mate-panel-background.png") left bottom;
+	border: solid 1px white;
+	border-bottom-color: black;
 }
 PanelToplevel menubar {
 	border: 0;
