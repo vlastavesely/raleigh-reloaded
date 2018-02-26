@@ -215,7 +215,7 @@ combobox arrow {
 	min-width: .8em;
 }
 combobox button:first-child arrow {
-	background: url("assets/combobox-arrow-separator.png") no-repeat left center;
+	border-image: url("assets/combobox-arrow-separator.png") 2 / 2px stretch;
 	padding-left: .5em;
 }
 
