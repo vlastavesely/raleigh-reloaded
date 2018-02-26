@@ -129,34 +129,16 @@ scrollbar.horizontal slider {
 }
 scrollbar.vertical button.up {
 	-gtk-icon-source: -gtk-icontheme("pan-up-symbolic");
-/*	-gtk-icon-source: url("assets/scrollbar-button-top.png"); */
 }
 scrollbar.vertical button.down {
 	-gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
-/*	-gtk-icon-source: url("assets/scrollbar-button-bottom.png"); */
 }
 scrollbar.horizontal button.up {
 	-gtk-icon-source: -gtk-icontheme("pan-start-symbolic");
-/*	-gtk-icon-source: url("assets/scrollbar-button-left.png"); */
 }
 scrollbar.horizontal button.down {
 	-gtk-icon-source: -gtk-icontheme("pan-end-symbolic");
-/*	-gtk-icon-source: url("assets/scrollbar-button-right.png"); */
 }
-/*
-scrollbar.vertical button.up:disabled {
-	-gtk-icon-source: url("assets/scrollbar-button-disabled-top.png");
-}
-scrollbar.vertical button.down:disabled {
-	-gtk-icon-source: url("assets/scrollbar-button-disabled-bottom.png");
-}
-scrollbar.horizontal button.up:disabled {
-	-gtk-icon-source: url("assets/scrollbar-button-disabled-left.png");
-}
-scrollbar.horizontal button.down:disabled {
-	-gtk-icon-source: url("assets/scrollbar-button-disabled-right.png");
-}
-*/
 
 /**************
  * checkboxes *
@@ -367,9 +349,9 @@ expander arrow:checked {
 	-gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
 }
 
-/*************************************************************
- * the fucking shitty GTK3 window's headerbar and decoration *
- *************************************************************/
+/********************************
+ * CSD header and window border *
+ ********************************/
 headerbar {
 	background-color: @theme_bg_color;
 	border-bottom: solid 1px shade(@theme_bg_color, .8);
