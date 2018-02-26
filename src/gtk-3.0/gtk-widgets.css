@@ -229,14 +229,13 @@ entry {
 combobox arrow {
 	-gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
 	color: @theme_fg_color;
-	min-height: 16px;
-	min-width: 16px;
+	min-height: .8em;
+	min-width: .8em;
 }
 combobox button:first-child arrow {
 	background: url("assets/combobox-arrow-separator.png") no-repeat left center;
-	padding-left: 4px;
+	padding-left: .5em;
 }
-
 
 /*********
  * menus *
