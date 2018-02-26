@@ -599,6 +599,7 @@ levelbar block.filled {
 switch {
 	background-color: shade(@theme_bg_color, .9);
 	border-image: url("assets/button-pressed.png") 3 / 3px stretch;
+	min-height: 2em;
 }
 switch slider {
 	background-color: @theme_bg_color;
