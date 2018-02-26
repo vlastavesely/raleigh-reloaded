@@ -102,42 +102,48 @@ scrollbar button:active:hover,
 scrollbar button:disabled {
 	background: @theme_bg_color no-repeat;
 	color: black;
-	font-size: 8px;
-	min-height: 14px;
-	min-width: 14px;
-	padding: 0;
+	font-size: .8em;
+	min-height: .8rem;
+	min-width: .8rem;
+	padding: .18rem;
 }
 scrollbar button:disabled {
 	color: shade(@theme_bg_color, .6);
 }
 scrollbar slider {
 	background: @theme_bg_color;
-	border: solid 2px;
 	border-image: url("assets/button.png") 2 / 2px stretch;
 }
 scrollbar slider:hover {
 	background-color: shade(@theme_bg_color, 1.05);
 }
 scrollbar.vertical slider {
-	min-height: 4px;
-	min-width: 10px;
+	min-height: .5rem;
+	min-width: .8rem;
+	padding: .18rem;
 }
 scrollbar.horizontal slider {
-	min-height: 10px;
-	min-width: 4px;
+	min-height: .8rem;
+	min-width: .5rem;
+	padding: .18rem;
 }
 scrollbar.vertical button.up {
-	-gtk-icon-source: url("assets/scrollbar-button-top.png");
+	-gtk-icon-source: -gtk-icontheme("pan-up-symbolic");
+/*	-gtk-icon-source: url("assets/scrollbar-button-top.png"); */
 }
 scrollbar.vertical button.down {
-	-gtk-icon-source: url("assets/scrollbar-button-bottom.png");
+	-gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
+/*	-gtk-icon-source: url("assets/scrollbar-button-bottom.png"); */
 }
 scrollbar.horizontal button.up {
-	-gtk-icon-source: url("assets/scrollbar-button-left.png");
+	-gtk-icon-source: -gtk-icontheme("pan-start-symbolic");
+/*	-gtk-icon-source: url("assets/scrollbar-button-left.png"); */
 }
 scrollbar.horizontal button.down {
-	-gtk-icon-source: url("assets/scrollbar-button-right.png");
+	-gtk-icon-source: -gtk-icontheme("pan-end-symbolic");
+/*	-gtk-icon-source: url("assets/scrollbar-button-right.png"); */
 }
+/*
 scrollbar.vertical button.up:disabled {
 	-gtk-icon-source: url("assets/scrollbar-button-disabled-top.png");
 }
@@ -150,6 +156,7 @@ scrollbar.horizontal button.up:disabled {
 scrollbar.horizontal button.down:disabled {
 	-gtk-icon-source: url("assets/scrollbar-button-disabled-right.png");
 }
+*/
 
 /**************
  * checkboxes *
