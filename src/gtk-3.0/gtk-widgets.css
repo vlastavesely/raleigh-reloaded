@@ -64,7 +64,7 @@ selection:focus,
 button {
 	background: @theme_bg_color;
 	border-image: url("assets/button.png") 3 / 3px stretch;
-	padding: .4em;
+	padding: .35em;
 }
 button:hover {
 	background-color: shade(@theme_bg_color, 1.05);
@@ -202,7 +202,7 @@ radio:checked:disabled {
 entry {
 	background: @theme_base_color;
 	border-image: url("assets/entry.png") 2 / 2px stretch;
-	padding: .4em;
+	padding: .35em;
 }
 entry:disabled {
 	background-color: shade(@theme_bg_color, 1.05);
@@ -214,8 +214,9 @@ entry:disabled {
 combobox arrow {
 	-gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
 	color: @theme_fg_color;
-	min-height: 1.3em;
-	min-width: 1.3em;
+	margin: -.1em;
+	min-height: 1.5em;
+	min-width: 1.5em;
 }
 combobox button:first-child arrow {
 	border-image: url("assets/combobox-arrow-separator.png") 2 / 2px stretch;
@@ -236,7 +237,6 @@ menu {
 	border: solid 3px;
 	border-image: url("assets/menu.png") 3 / 3px stretch;
 	padding: 2px;
-
 }
 menubar > menuitem {
 	margin: 1px;
@@ -292,7 +292,7 @@ notebook header.right tabs {
 }
 notebook tab {
 	background: shade(@theme_bg_color, .9);
-	padding: .4em;
+	padding: .3em .4em;
 }
 notebook header.top tab {
 	border-image: url("assets/notebook-tab-top.png") 2 / 2px stretch;
