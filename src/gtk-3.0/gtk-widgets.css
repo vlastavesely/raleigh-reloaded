@@ -450,7 +450,11 @@ separator.vertical {
  *********/
 paned > separator {
 	background: url("assets/paned-separator-vertical.png") no-repeat center;
-	padding: 2px;
+	-gtk-icon-source: none;
+	padding: 1px;
+}
+paned > separator:hover {
+	background-color: shade(@theme_bg_color, 1.05);
 }
 paned.vertical > separator {
 	background-image: url("assets/paned-separator-horizontal.png");
