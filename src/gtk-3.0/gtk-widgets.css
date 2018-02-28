@@ -211,8 +211,8 @@ entry {
 combobox arrow {
 	-gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
 	color: @theme_fg_color;
-	min-height: .8em;
-	min-width: .8em;
+	min-height: 1.3em;
+	min-width: 1.3em;
 }
 combobox button:first-child arrow {
 	border-image: url("assets/combobox-arrow-separator.png") 2 / 2px stretch;
@@ -237,13 +237,14 @@ menu {
 }
 menubar > menuitem {
 	margin: 1px;
+	padding: .3em .4em;
 }
 menubar > menuitem:hover {
 	background: @theme_selected_bg_color;
 	color: @theme_selected_fg_color;
 }
 menuitem {
-	padding: .3em;
+	padding: .2em;
 }
 menuitem:hover {
 	background-color: @theme_selected_bg_color;
@@ -262,7 +263,8 @@ menuitem > image {
 	min-width: 1em;
 }
 menuitem > arrow {
-	margin-left: 10px;
+	font-size: 1.6em;
+	margin: -.2em 0 -.2em 1em;
 	-gtk-icon-source: -gtk-icontheme("pan-end-symbolic");
 }
 
