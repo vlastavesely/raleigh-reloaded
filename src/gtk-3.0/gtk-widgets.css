@@ -204,6 +204,9 @@ entry {
 	border-image: url("assets/entry.png") 2 / 2px stretch;
 	padding: .4em;
 }
+entry:disabled {
+	background-color: shade(@theme_bg_color, 1.05);
+}
 
 /**************
  * comboboxes *
