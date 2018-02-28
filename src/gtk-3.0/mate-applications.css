@@ -74,8 +74,8 @@
  * Pluma *
  *********/
 .pluma-window notebook header tabs {
-	min-height: 26px;
-	min-width: 26px;
+	min-height: 2.2em;
+	min-width: 2.2em;
 }
 .pluma-window statusbar > *:last-child {
 	padding-right: 5px;

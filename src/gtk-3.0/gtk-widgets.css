@@ -276,16 +276,16 @@ notebook.frame > stack {
 	padding: 2px;
 }
 notebook header.top tabs {
-	margin-top: 3px;
+	margin-top: .2em;
 }
 notebook header.bottom tabs {
-	margin-bottom: 3px;
+	margin-bottom: .2em;
 }
 notebook header.left tabs {
-	margin-left: 3px;
+	margin-left: .2em;
 }
 notebook header.right tabs {
-	margin-right: 3px;
+	margin-right: .2em;
 }
 notebook tab {
 	background: shade(@theme_bg_color, .9);
@@ -308,31 +308,31 @@ notebook header tab:checked {
 }
 notebook header.top tab:checked {
 	margin-bottom: -1px;
-	margin-top: -3px;
+	margin-top: -.2em;
 }
 notebook header.bottom tab:checked {
-	margin-bottom: -3px;
+	margin-bottom: -.2em;
 	margin-top: -2px;
 }
 notebook header.left tab:checked {
-	margin-left: -3px;
+	margin-left: -.2em;
 	margin-right: -1px;
 }
 notebook header.right tab:checked {
 	margin-left: -2px;
-	margin-right: -3px;
+	margin-right: -.2em;
 }
 notebook header.top tab:checked * {
 	margin-top: -1px;
 }
 notebook header.bottom tab:checked * {
-	margin-bottom: -3px;
+	margin-bottom: -.2em;
 }
 notebook header.left tab:checked * {
 	margin-left: -2px;
 }
 notebook header.right tab:checked * {
-	margin-right: -3px;
+	margin-right: -.2em;
 }
 notebook tab button {
 	background-color: transparent;
