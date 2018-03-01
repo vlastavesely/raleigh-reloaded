@@ -86,6 +86,9 @@ button:disabled {
 button.link {
 	color: @link_color;
 }
+button.link > label {
+	text-decoration-line: underline;
+}
 button.color * {
 	border-image: url("assets/frame-etched-out.png") 2 / 2px stretch;
 	margin: 0 .3em;
