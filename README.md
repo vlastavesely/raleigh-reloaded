@@ -7,7 +7,7 @@ Raleigh Reloaded GTK Theme
 
 This is a `GTK-3.20` theme aiming to revive the classic `Raleigh` theme. It is a minimal theme written from scratch completely. For that reason, some elements may be unstyled and therefore look ugly.
 
-This theme has been developed on `Debian` with `Mate Desktop` and tested on most of the default-installed applications and on `gtk3-widget-factory` as well. On the contrary, this theme was not tested on another desktop environments. If you are interested in extending support to any other desktop environment, do not create a feature request but implement it and send me a pull request to merge.
+This theme has been developed on `Debian` with `Mate Desktop` and tested on most of the default-installed applications and on `gtk3-widget-factory` and the [`A Widget Factory`](https://github.com/valr/awf) as well. On the contrary, this theme was not tested on another desktop environments. If you are interested in extending support to any other desktop environment, do not create a feature request but implement it and send me a pull request to merge.
 
 
 Notes on Compatibility
