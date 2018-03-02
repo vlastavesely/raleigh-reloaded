@@ -32,7 +32,7 @@
 	padding: 2px;
 }
 .caja-side-pane treeview {
-	padding: 3px 0;
+	padding: .2em 0;
 }
 .caja-navigation-window statusbar border {
 	border: 0;
@@ -74,8 +74,8 @@
  * Pluma *
  *********/
 .pluma-window notebook header tabs {
-	min-height: 26px;
-	min-width: 26px;
+	min-height: 2.2em;
+	min-width: 2.2em;
 }
 .pluma-window statusbar > *:last-child {
 	padding-right: 5px;
@@ -93,10 +93,13 @@ PanelToplevel > grid {
 	border: 0;
 }
 MatePanelAppletFrameDBus {
-	background: transparent no-repeat left center url("assets/mate-panel-frame.png");
+	background: transparent url("assets/mate-panel-background.png") left bottom;
+	border: solid 1px white;
+	border-bottom-color: black;
 }
 PanelToplevel menubar {
 	border: 0;
+	margin: -1px;
 }
 wnck-tasklist button.flat:not(:hover):not(:checked) {
 	border-image: url("assets/button.png") 2 / 2px stretch;
