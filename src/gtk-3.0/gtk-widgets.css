@@ -422,6 +422,9 @@ statusbar frame,
 statusbar > label {
 	border-image: url("assets/statusbar-frame.png") 2 / 2px stretch;
 }
+statusbar frame {
+	padding: 0;
+}
 statusbar frame > border {
 	border: 0;
 }
