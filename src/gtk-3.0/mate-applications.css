@@ -99,6 +99,7 @@ MatePanelAppletFrameDBus {
 }
 PanelToplevel menubar {
 	border: 0;
+	margin: -1px;
 }
 wnck-tasklist button.flat:not(:hover):not(:checked) {
 	border-image: url("assets/button.png") 2 / 2px stretch;
