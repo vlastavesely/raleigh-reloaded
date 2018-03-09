@@ -656,6 +656,26 @@ tooltip decoration {
 	border: 0;
 }
 
+/*************
+ * calendars *
+ *************/
+calendar {
+	padding: 2px;
+}
+calendar.header {
+	background: @theme_bg_color;
+}
+calendar.view {
+	border-image: url("assets/frame-etched-out.png") 2 / 2px stretch;
+}
+calendar:indeterminate {
+	color: alpha(@theme_fg_color, 0.4);
+}
+calendar.highlight {
+	background-color: @theme_selected_bg_color;
+	color: @theme_selected_fg_color;
+}
+
 /************
  * infobars *
  ************/
