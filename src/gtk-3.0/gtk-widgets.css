@@ -763,6 +763,10 @@ printdialog > box > box {
 printdialog box {
 	background: @theme_bg_color;
 }
+printdialog notebook stack {
+	border-image: url("assets/notebook.png") 3 / 3px stretch;
+	padding: 2px;
+}
 printdialog paper {
 	background-color: @theme_base_color;
 	border: solid 1px shade(@theme_bg_color, .6);
