@@ -237,6 +237,7 @@ menubar decoration,
 	border: 0;
 }
 menu {
+	background: @theme_bg_color;
 	border: solid 3px;
 	border-image: url("assets/menu.png") 3 / 3px stretch;
 	padding: 2px;
