@@ -1,0 +1,31 @@
+/***************
+ * Firefox ESR *
+ ***************/
+scrollbar.vertical .button.top {
+	background: @theme_bg_color center url("assets/pan-up-symbolic-fallback.png") no-repeat;
+	color: transparent;
+}
+scrollbar.vertical .button.bottom {
+	background: @theme_bg_color center url("assets/pan-down-symbolic-fallback.png") no-repeat;
+	color: transparent;
+}
+scrollbar.horizontal .button.left {
+	background: @theme_bg_color center url("assets/pan-start-symbolic-fallback.png") no-repeat;
+	color: transparent;
+}
+scrollbar.horizontal .button.right {
+	background: @theme_bg_color center url("assets/pan-end-symbolic-fallback.png") no-repeat;
+	color: transparent;
+}
+scrollbar.vertical .button.top:disabled {
+	background-image: url("assets/pan-up-symbolic-disabled-fallback.png");
+}
+scrollbar.vertical .button.bottom:disabled {
+	background-image: url("assets/pan-down-symbolic-disabled-fallback.png");
+}
+scrollbar.horizontal .button.left:disabled {
+	background-image: url("assets/pan-start-symbolic-disabled-fallback.png");
+}
+scrollbar.horizontal .button.right:disabled {
+	background-image: url("assets/pan-end-symbolic-disabled-fallback.png");
+}

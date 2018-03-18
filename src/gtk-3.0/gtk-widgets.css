@@ -61,26 +61,26 @@ selection:focus,
 /***********
  * buttons *
  ***********/
-button {
+button, .button {
 	background: @theme_bg_color;
 	border-image: url("assets/button.png") 3 / 3px stretch;
 	padding: .35em;
 }
-button:hover {
+button:hover, .button:hover {
 	background-color: shade(@theme_bg_color, 1.05);
 }
-button:active,
-button:active:hover,
-button.toggle:checked,
+button:active, .button:active,
+button:active:hover, .button:active:hover,
+button.toggle:checked
 button.toggle:active:hover,
 stackswitcher button:checked {
 	background-color: shade(@theme_bg_color, .9);
 	border-image-source: url("assets/button-pressed.png");
 }
-button:focus {
+button:focus, .button:focus {
 	border-image-source: url("assets/button-focus.png");
 }
-button:disabled {
+button:disabled, .button:disabled {
 	border-image-source: url("assets/button-disabled.png");
 }
 button.link {
@@ -108,7 +108,7 @@ scrollbar button:disabled {
 	font-size: .8em;
 	min-height: .8rem;
 	min-width: .8rem;
-	padding: .18rem;
+	padding: 2px;
 }
 scrollbar button:disabled {
 	color: shade(@theme_bg_color, .6);
@@ -123,12 +123,12 @@ scrollbar slider:hover {
 scrollbar.vertical slider {
 	min-height: .5rem;
 	min-width: .8rem;
-	padding: .18rem;
+	padding: 2px;
 }
 scrollbar.horizontal slider {
 	min-height: .8rem;
 	min-width: .5rem;
-	padding: .18rem;
+	padding: 2px;
 }
 scrollbar.vertical button.up {
 	-gtk-icon-source: -gtk-icontheme("pan-up-symbolic");
