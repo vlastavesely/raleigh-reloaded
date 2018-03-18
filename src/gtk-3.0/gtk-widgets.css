@@ -71,7 +71,7 @@ button:hover, .button:hover {
 }
 button:active, .button:active,
 button:active:hover, .button:active:hover,
-button.toggle:checked
+button.toggle:checked,
 button.toggle:active:hover,
 stackswitcher button:checked {
 	background-color: shade(@theme_bg_color, .9);
