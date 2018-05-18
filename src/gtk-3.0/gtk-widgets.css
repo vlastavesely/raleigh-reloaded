@@ -730,6 +730,12 @@ dialog filechooser actionbar {
 	margin-top: 5px;
 	padding: 7px;
 }
+dialog filechooser frame {
+	padding: 0;
+}
+dialog filechooser frame border {
+	border: 0;
+}
 
 /*****************
  * color chooser *

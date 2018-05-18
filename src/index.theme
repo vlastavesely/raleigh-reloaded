@@ -5,5 +5,5 @@ Version=v1.0
 Encoding=UTF-8
 
 [X-GNOME-Metatheme]
-GtkTheme=Raleigh Reloaded
+GtkTheme=Raleigh-Reloaded
 ButtonLayout=:minimize,maximize,close
