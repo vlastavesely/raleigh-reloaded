@@ -231,6 +231,7 @@ combobox button:first-child arrow {
  *********/
 menubar {
 	border-image: url("assets/button.png") 2 / 2px stretch;
+	-GtkWidget-window-dragging: true;
 }
 menubar decoration,
 .popup decoration {
