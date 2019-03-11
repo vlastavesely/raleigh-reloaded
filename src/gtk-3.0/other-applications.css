@@ -29,3 +29,29 @@ scrollbar.horizontal .button.left:disabled {
 scrollbar.horizontal .button.right:disabled {
 	background-image: url("assets/pan-end-symbolic-disabled-fallback.png");
 }
+
+
+/***********
+ * LightDM *
+ ***********/
+.lightdm-gtk-greeter button {
+	padding: .7rem;
+}
+.lightdm-gtk-greeter entry {
+	padding: .7rem;
+}
+
+/* 2. 0 */
+.lightdm-gtk-greeter #login_window.background,
+/* 1.8.5 */
+#login_window.background.lightdm-gtk-greeter,
+#login_window.background.lightdm-gtk-greeter box.vertical {
+	border-image: url("assets/frame-etched-out.png") 2 / 2px stretch;
+}
+
+/* 2.0. */
+.lightdm-gtk-greeter #login_window.background #buttonbox_frame,
+/* 1.8.5 */
+#login_window.background.lightdm-gtk-greeter #buttonbox_frame {
+	padding-top: 1rem;
+}
