@@ -92,6 +92,9 @@ PanelToplevel > grid {
 #clock-applet-button {
 	border: 0;
 }
+#clock-applet-button label {
+	padding: 0 .75rem;
+}
 MatePanelAppletFrameDBus {
 	background: transparent url("assets/mate-panel-background.png") left bottom;
 	border: solid 1px white;
