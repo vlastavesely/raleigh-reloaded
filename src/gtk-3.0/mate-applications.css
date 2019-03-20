@@ -86,7 +86,6 @@
  **************/
 PanelToplevel > grid {
 	border-image: url("assets/button.png") 2 / 2px stretch;
-	margin: -2px -2px 0 -2px;
 	padding: 2px;
 }
 #clock-applet-button {
