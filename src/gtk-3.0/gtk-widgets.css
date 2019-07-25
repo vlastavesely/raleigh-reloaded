@@ -53,7 +53,8 @@ selection:focus,
 	color: @theme_selected_fg_color;
 }
 .rubberband,
-.view.rubberband {
+.view.rubberband,
+rubberband {
 	background-color: alpha(@theme_selected_bg_color, 0.3);
 	border: 1px solid @theme_selected_bg_color;
 }
