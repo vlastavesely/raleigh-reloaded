@@ -491,11 +491,14 @@ buttonbox.horizontal button:last-child {
 progressbar trough,
 levelbar trough,
 scale trough,
+treeview.view.trough,
+treeview.view.trough:selected,
 scrollbar {
 	background-color: shade(@theme_bg_color, .9);
 	border: solid 1px shade(@theme_bg_color, .6);
 	border-bottom-color: white;
 	border-right-color: white;
+	color: @theme_fg_color;
 }
 
 /*********
@@ -571,7 +574,8 @@ progressbar {
 progressbar trough {
 	padding: 1px;
 }
-progressbar progress {
+progressbar progress,
+treeview.view.progressbar {
 	background: @theme_selected_bg_color;
 	border-image: url("assets/progress.png") 2 / 2px stretch;
 	color: @theme_selected_fg_color;
@@ -585,6 +589,9 @@ progressbar.vertical,
 progressbar.vertical progress,
 progressbar.vertical trough {
 	min-width: 1.3em;
+}
+treeview.view.trough {
+	padding: 2px;
 }
 
 /************
