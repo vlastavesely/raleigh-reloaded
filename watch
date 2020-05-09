@@ -1,0 +1,42 @@
+#!/bin/sh
+#
+# This is a helper script for development of the theme. It watches
+# changes in the ‘src’ directory and refreshes GTK theme setup when
+# any change occurred.
+#
+# Notes:
+#  - Works only for MATE Desktop.
+#  - Requires ‘inotifywait’ (the Debian ‘inotify-tools’ package).
+
+ORIG_THEME=$(gsettings get org.mate.interface "gtk-theme")
+WATCH_NAME=xxx-raleigh-reloaded
+
+cleanup()
+{
+	echo >&2 "\nInterrupted."
+	unlink "$HOME/.themes/$WATCH_NAME"
+	gsettings set org.mate.interface "gtk-theme" "$ORIG_THEME"
+	exit 0
+}
+
+cat >&2 <<EOF
+Monitoring the ‘src’ directory for changes ...
+Press ‘Ctrl+C’ to exit.
+
+EOF
+
+ln -sf $(pwd)/src "$HOME/.themes/$WATCH_NAME"
+test -n "$(which inotifywait)" || {
+	echo >&2 "fatal: executable ‘inotifywait’ not found."
+	exit 1
+}
+
+trap cleanup 2
+
+while true
+do
+	date +'%H:%M:%S - %d %b %Y - Reloading GTK theme ...'
+	gsettings set org.mate.interface "gtk-theme" "Adwaita"
+	gsettings set org.mate.interface "gtk-theme" "$WATCH_NAME"
+	inotifywait -qr -e modify -e create -e delete src
+done
