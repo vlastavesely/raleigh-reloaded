@@ -123,6 +123,12 @@ wnck-tasklist button.flat:not(:hover):not(:checked) {
 GvcMixerDialog border {
 	padding: 10px;
 }
+GvcMixerDialog gvc-level-bar * {
+	background: shade(@theme_bg_color, 0.9);
+}
+GvcMixerDialog gvc-level-bar *:selected {
+	background: @theme_selected_bg_color;
+}
 
 /***************
  * Lock Screen *
