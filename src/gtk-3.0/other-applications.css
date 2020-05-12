@@ -29,7 +29,9 @@ scrollbar.horizontal .button.left:disabled {
 scrollbar.horizontal .button.right:disabled {
 	background-image: url("assets/pan-end-symbolic-disabled-fallback.png");
 }
-
+menu separator {
+	padding-top: 1px;
+}
 
 /***********
  * LightDM *

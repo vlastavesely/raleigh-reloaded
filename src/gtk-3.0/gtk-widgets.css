@@ -247,6 +247,7 @@ combobox button:first-child arrow {
 menubar {
 	border-image: url("assets/button.png") 2 / 2px stretch;
 	-GtkWidget-window-dragging: true;
+	padding: 1px;
 }
 menubar decoration,
 .popup decoration {
@@ -254,12 +255,12 @@ menubar decoration,
 }
 menu {
 	background: @theme_bg_color;
-	border: solid 3px;
+	border: solid 2px;
 	border-image: url("assets/menu.png") 3 / 3px stretch;
-	padding: 2px;
+	padding: 1px;
 }
 menubar > menuitem {
-	margin: 1px;
+	margin: 0;
 	padding: .3em .4em;
 }
 menubar > menuitem:hover {
@@ -267,7 +268,8 @@ menubar > menuitem:hover {
 	color: @theme_selected_fg_color;
 }
 menuitem {
-	padding: .2em;
+	margin: 1px;
+	padding: 3px;
 }
 menuitem:hover {
 	background-color: @theme_selected_bg_color;
@@ -275,8 +277,8 @@ menuitem:hover {
 }
 menu separator {
 	border-image: url("assets/separator-horizontal.png") 1 / 1px stretch;
+	min-height: 1px;
 	margin: .2em .4em;
-	padding: 1px;
 }
 menuitem > check,
 menuitem > radio,
@@ -286,7 +288,7 @@ menuitem > image {
 	min-width: 1em;
 }
 menuitem > arrow {
-	font-size: 1.6em;
+	font-size: 1.4em;
 	margin: -.2em 0 -.2em 1em;
 	-gtk-icon-source: -gtk-icontheme("pan-end-symbolic");
 }
