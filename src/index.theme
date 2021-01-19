@@ -1,9 +1,9 @@
 [Desktop Entry]
 Type=X-GNOME-Metatheme
-Name=Raleigh Reloaded
+Name=Flat-grey-rounded
 Version=v1.0
 Encoding=UTF-8
 
 [X-GNOME-Metatheme]
-GtkTheme=Raleigh-Reloaded
+GtkTheme=Flat-grey-rounded
 ButtonLayout=:minimize,maximize,close
