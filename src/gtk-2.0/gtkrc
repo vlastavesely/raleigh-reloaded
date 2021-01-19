@@ -4,7 +4,7 @@ style "default"
 {
 
 # for gtk2...
-  font_name="DejaVu Sans 12"
+  font_name="DejaVu Sans 10"
   
   # FFFF00=yellow  "#9dbbdb" #"#4D525B" ##dddddd
 	#fg[NORMAL]		= "#FFFF00"		#yellow. Foreground text of nearly all widgets (not editor text)
