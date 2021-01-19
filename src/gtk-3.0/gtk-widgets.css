@@ -41,15 +41,15 @@
 selection,
 *:selected,
 .view:selected {
-	background: @theme_bg_color;
-	color: @theme_fg_color;
+	background: #526f88;
+	color: white;
 }
 selection:focus,
 *:selected:focus,
 .view:selected:focus,
 *:focus *:selected {
-	background-color: @theme_selected_bg_color;
-	color: @theme_selected_fg_color;
+	background: #526f88;
+	color: white;
 }
 .rubberband,
 .view.rubberband,
@@ -62,26 +62,31 @@ rubberband {
  * buttons *
  ***********/
 button, .button {
-	background: @theme_bg_color;
-	border-image: url("assets/button.png") 3 / 3px stretch;
+	background-color: #D2D4D2;
+	border: 1px solid #989B98;
+	border-radius: 3px;
 	padding: .35em;
 }
 button:hover, .button:hover {
-	background-color: shade(@theme_bg_color, 1.05);
+	background-color: @theme_selected_bg_color;
+	border: 1px solid black;
 }
 button:active, .button:active,
 button:active:hover, .button:active:hover,
 button.toggle:checked,
 button.toggle:active:hover,
 stackswitcher button:checked {
-	background-color: shade(@theme_bg_color, .9);
-	border-image-source: url("assets/button-pressed.png");
+	background-color: @theme_selected_bg_color;
+	border: 1px solid black;
 }
 button:focus, .button:focus {
-	border-image-source: url("assets/button-focus.png");
+	background-color: @theme_selected_bg_color;
+	border: 1px solid black;
 }
 button:disabled, .button:disabled {
-	border-image-source: url("assets/button-disabled.png");
+	color: #6f6f6f;
+	background-color: white;
+	border: 1px solid #A4A7A4;
 }
 button.link {
 	color: @link_color;
@@ -103,7 +108,7 @@ scrollbar button:hover,
 scrollbar button:active,
 scrollbar button:active:hover,
 scrollbar button:disabled {
-	background: @theme_bg_color no-repeat;
+	background-color: @theme_bg_color;
 	color: black;
 	font-size: .8em;
 	min-height: .8rem;
@@ -111,14 +116,17 @@ scrollbar button:disabled {
 	padding: 2px;
 }
 scrollbar button:disabled {
-	color: shade(@theme_bg_color, .6);
+	background-color: @theme_bg_color;
+	color: white;
 }
 scrollbar slider {
-	background: @theme_bg_color;
-	border-image: url("assets/button.png") 2 / 2px stretch;
+	background-color: #D2D4D2;
+	border: 1px solid #989B98;
+	border-radius: 3px;
 }
 scrollbar slider:hover {
-	background-color: shade(@theme_bg_color, 1.05);
+	background-color: @theme_selected_bg_color;
+	border: 1px solid black;
 }
 scrollbar.vertical slider {
 	min-height: .5rem;
@@ -152,13 +160,13 @@ check, radio {
 	min-width: 1em;
 }
 checkbutton:hover, radiobutton:hover {
-	background-color: shade(@theme_bg_color, 1.05);
+	background-color: @theme_selected_bg_color;
 }
 checkbutton label, radiobutton label {
 	padding-right: .5em;
 }
 check:disabled, radio:disabled {
-	border-color: shade(@theme_bg_color, .6);
+	color: #6f6f6f;
 }
 check {
 	-gtk-icon-source: url("assets/checkbox-unchecked.png");
@@ -243,6 +251,7 @@ combobox button:first-child arrow {
 /*********
  * menus *
  *********/
+
 menubar {
 	border-image: url("assets/button.png") 2 / 2px stretch;
 	-GtkWidget-window-dragging: true;
@@ -261,18 +270,23 @@ menu {
 menubar > menuitem {
 	margin: 0;
 	padding: .3em .4em;
+	border: 1px solid transparent;
+	border-radius: 3px;
 }
 menubar > menuitem:hover {
-	background: @theme_selected_bg_color;
-	color: @theme_selected_fg_color;
+	background-color: #D2D4D2;
+	border: 1px solid #989B98;
 }
 menuitem {
 	margin: 1px;
 	padding: 3px;
+	border: 1px solid transparent;
+	border-radius: 3px;
 }
 menuitem:hover {
 	background-color: @theme_selected_bg_color;
 	color: @theme_selected_fg_color;
+	border: 1px solid black;
 }
 menu separator {
 	border-image: url("assets/separator-horizontal.png") 1 / 1px stretch;
@@ -339,23 +353,36 @@ notebook.frame > .frame {
 }
 notebook header.top tab,
 notebook.frame > .frame.top {
-	border-image: url("assets/notebook-tab-top.png") 2 / 2px stretch;
+	background-color: #D2D4D2;
+	border: 1px solid #989B98;
+	border-radius: 3px;
+	padding: 5px;
 }
 notebook header.bottom tab,
 notebook.frame > .frame.bottom {
-	border-image: url("assets/notebook-tab-bottom.png") 2 / 2px stretch;
+	background-color: #D2D4D2;
+	border: 1px solid #989B98;
+	border-radius: 3px;
+	padding: 5px;
 }
 notebook header.left tab,
 notebook.frame > .frame.left {
-	border-image: url("assets/notebook-tab-left.png") 2 / 2px stretch;
+	background-color: #D2D4D2;
+	border: 1px solid #989B98;
+	border-radius: 3px;
+	padding: 5px;
 }
 notebook header.right tab,
 notebook.frame > .frame.right {
-	border-image: url("assets/notebook-tab-right.png") 2 / 2px stretch;
+	background-color: #D2D4D2;
+	border: 1px solid #989B98;
+	border-radius: 3px;
+	padding: 5px;
 }
 notebook header tab:checked,
 notebook.frame > .frame:active {
-	background: @theme_bg_color;
+	background-color: @theme_selected_bg_color;
+	border: 1px solid black;
 }
 notebook header.top tab:checked {
 	margin-bottom: -1px;
@@ -397,14 +424,14 @@ expander arrow:checked {
  * CSD header and window border *
  ********************************/
 headerbar {
-	background-color: @theme_bg_color;
-	border-bottom: solid 1px shade(@theme_bg_color, .8);
+	background-color: #D2D4D2;
+	border: 1px solid #989B98;
+	border-radius: 3px;
 	padding: 7px;
 }
 decoration {
-	background-color: @theme_bg_color;
-	border: solid 3px @theme_bg_color;
-	border-image: url("assets/button.png") 3 / 3px stretch;
+	background-color: #D2D4D2;
+	border: 1px solid #989B98;
 }
 
 /****************************
@@ -423,7 +450,7 @@ decoration {
  * popovers *
  ************/
 popover {
-	border: solid 1px shade(@theme_bg_color, 0.5);
+	border: 1px solid #989B98;
 }
 popover .flat {
 	padding: 5px;
@@ -434,7 +461,8 @@ popover .flat {
  ***********/
 toolbar {
 	background: @theme_bg_color;
-	border-image: url("assets/button.png") 3 / 3px stretch;
+	border-radius: 3px;
+	border: 1px solid #989B98;
 	padding: 3px;
 }
 toolbar separator {
@@ -442,7 +470,6 @@ toolbar separator {
 	margin: 5px;
 	padding: 1px;
 }
-
 /*************
  * statusbar *
  *************/
@@ -475,7 +502,9 @@ list row {
 	padding: 5px;
 }
 list row:hover {
-	background-color: shade(@theme_bg_color, 1.05);
+	background-color: @theme_selected_bg_color;
+	border: 1px solid black;
+	border-radius: 3px;
 }
 
 /**************
@@ -499,7 +528,9 @@ paned > separator {
 	padding: 1px;
 }
 paned > separator:hover {
-	background-color: shade(@theme_bg_color, 1.05);
+	background-color: @theme_selected_bg_color;
+	border-radius: 3px;
+	border: 1px solid black;
 }
 paned.vertical > separator {
 	background-image: url("assets/paned-separator-horizontal.png");
@@ -553,14 +584,18 @@ scale {
 	margin: 1px;
 }
 scale slider {
-	background: @theme_bg_color no-repeat center;
-	border-image: url("assets/scale-slider-border.png") 2 / 2px stretch;
+	background-color: #D2D4D2;
+	border: 1px solid #989B98;
+	border-radius: 3px;
 }
 scale slider:hover {
-	background-color: shade(@theme_bg_color, 1.05);
+	background-color: @theme_selected_bg_color;
+	border: 1px solid black;
 }
 scale trough:disabled {
-	background-color: @theme_bg_color;
+	background-color: white;
+	color: #6f6f6f;
+	border: 1px solid #A4A7A4;
 }
 scale.horizontal trough {
 	padding: 0 1.2em;
@@ -569,22 +604,20 @@ scale.vertical trough {
 	padding: 1.2em 0;
 }
 scale.horizontal slider {
-	background-image: url("assets/scale-slider-horizontal.png");
 	min-height: 1em;
 	min-width: 2.4em;
 }
 scale.vertical slider {
-	background-image: url("assets/scale-slider-vertical.png");
 	min-height: 2.4em;
 	min-width: 1em;
 }
 scale.horizontal mark indicator {
-	background-color: shade(@theme_bg_color, 0.56);
+	background-color: @theme_selected_bg_color;
 	min-height: 8px;
 	min-width: 1px;
 }
 scale.vertical mark indicator {
-	background-color: shade(@theme_bg_color, 0.56);
+	background-color: @theme_selected_bg_color;
 	min-height: 1px;
 	min-width: 8px;
 }
@@ -621,9 +654,9 @@ progressbar trough {
 }
 progressbar progress,
 treeview.view.progressbar {
-	background: @theme_selected_bg_color;
-	border-image: url("assets/progress.png") 2 / 2px stretch;
-	color: @theme_selected_fg_color;
+	background-color: @theme_selected_bg_color;
+	border: 1px solid black;
+	border-radius: 3px;
 }
 progressbar.horizontal,
 progressbar.horizontal progress,
@@ -647,8 +680,9 @@ levelbar block {
 	padding: 3px;
 }
 levelbar block.filled {
-	background: @theme_selected_bg_color;
-	border-image: url("assets/progress.png") 2 / 2px stretch;
+	background-color: @theme_selected_bg_color;
+	border: 1px solid black;
+	border-radius: 3px;
 }
 
 /**********
@@ -660,14 +694,16 @@ switch {
 	min-height: 2em;
 }
 switch slider {
-	background-color: @theme_bg_color;
-	border-image: url("assets/button.png") 3 / 3px stretch;
+	background-color: #D2D4D2;
+	border: 1px solid #989B98;
+	border-radius: 3px;
 	margin: 2px;
 	padding: .3em;
 }
 switch:checked {
 	background: @theme_selected_bg_color;
 	color: @theme_selected_fg_color;
+	border: 1px solid black;
 }
 
 /************
@@ -688,9 +724,9 @@ scrolledwindow.frame {
  ************/
 tooltip,
 tooltip.background  {
-	background-color: @theme_tooltip_bg_color;
-	border: solid 1px alpha(@theme_tooltip_fg_color, .3);
-	color: alpha(@theme_tooltip_fg_color, .8);
+	background-color: white;
+	border: solid 1px black;
+	color: black;
 }
 tooltip *, .tooltip * {
 	background-color: transparent;
