@@ -103,40 +103,35 @@ button.color * {
 /**************
  * scrollbars *
  **************/
-scrollbar button,
-scrollbar button:hover,
-scrollbar button:active,
-scrollbar button:active:hover,
-scrollbar button:disabled {
-	background-color: @theme_bg_color;
-	color: black;
-	font-size: .8em;
-	min-height: .8rem;
-	min-width: .8rem;
-	padding: 2px;
-}
-scrollbar button:disabled {
-	background-color: @theme_bg_color;
-	color: white;
-}
-scrollbar slider {
+scrollbar button {
 	background-color: #D2D4D2;
 	border: 1px solid #989B98;
 	border-radius: 3px;
+	padding: .35em;
 }
-scrollbar slider:hover {
+scrollbar button:hover,
+scrollbar button:active,
+scrollbar button:active:hover {
 	background-color: @theme_selected_bg_color;
 	border: 1px solid black;
+}
+scrollbar button:disabled {
+	color: #6f6f6f;
+	background-color: white;
+	border: 1px solid #A4A7A4;
+}
+scrollbar slider {
+	background-color: @theme_selected_bg_color;
+	border: 1px solid black;
+	border-radius: 3px;
 }
 scrollbar.vertical slider {
 	min-height: .5rem;
 	min-width: .8rem;
-	padding: 2px;
 }
 scrollbar.horizontal slider {
 	min-height: .8rem;
 	min-width: .5rem;
-	padding: 2px;
 }
 scrollbar.vertical button.up {
 	-gtk-icon-source: -gtk-icontheme("pan-up-symbolic");
@@ -284,9 +279,8 @@ menuitem {
 	border-radius: 3px;
 }
 menuitem:hover {
-	background-color: @theme_selected_bg_color;
-	color: @theme_selected_fg_color;
-	border: 1px solid black;
+	background-color: #D2D4D2;
+	border: 1px solid #989B98;
 }
 menu separator {
 	border-image: url("assets/separator-horizontal.png") 1 / 1px stretch;
@@ -585,12 +579,8 @@ scale {
 	margin: 1px;
 }
 scale slider {
-	background-color: #D2D4D2;
-	border: 1px solid #989B98;
-	border-radius: 3px;
-}
-scale slider:hover {
 	background-color: @theme_selected_bg_color;
+	border-radius: 3px;
 	border: 1px solid black;
 }
 scale trough:disabled {
@@ -694,10 +684,11 @@ switch {
 	border-image: url("assets/button-pressed.png") 3 / 3px stretch;
 	min-height: 2em;
 	border: 1px solid transparent;
+	border-radius: 3px;
 }
 switch slider {
-	background-color: #D2D4D2;
-	border: 1px solid #989B98;
+	background-color: @theme_selected_bg_color;
+	border: 1px solid black;
 	border-radius: 3px;
 	margin: 2px;
 	padding: .3em;
