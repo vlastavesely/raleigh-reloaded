@@ -225,7 +225,7 @@ spinbutton * {
 	background: @theme_base_color;
 }
 spinbutton button {
-	background: @theme_bg_color;
+	background-color: #D2D4D2;
 }
 
 /**************
