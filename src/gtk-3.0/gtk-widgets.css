@@ -396,7 +396,7 @@ notebook header.right tab:checked {
 }
 notebook tab button {
 	background-color: transparent;
-	border: 0;
+	border: 1px solid transparent;
 }
 notebook.frame > .frame {
 	padding: .15rem;
