@@ -454,9 +454,7 @@ popover .flat {
  * toolbar *
  ***********/
 toolbar {
-	background: @theme_bg_color;
-	border-radius: 3px;
-	border: 1px solid #989B98;
+	border-image: url("assets/button.png") 2 / 2px stretch;
 	padding: 3px;
 }
 toolbar separator {
