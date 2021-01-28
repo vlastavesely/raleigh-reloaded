@@ -23,7 +23,7 @@
 @define-color theme_bg_color #EEEEEE;
 @define-color theme_fg_color black;
 
-@define-color theme_selected_bg_color #A9A9A9;
+@define-color theme_selected_bg_color #999999;
 @define-color theme_selected_fg_color black;
 
 @define-color theme_tooltip_bg_color white;

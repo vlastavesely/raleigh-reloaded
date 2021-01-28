@@ -85,7 +85,7 @@ button:focus, .button:focus {
 }
 button:disabled, .button:disabled {
 	color: #6f6f6f;
-	background-color: white;
+	background-image: linear-gradient(to bottom, white 80%, #e9e8e9);
 	border: 1px solid #A4A7A4;
 }
 button.link {
@@ -117,7 +117,7 @@ scrollbar button:active:hover {
 }
 scrollbar button:disabled {
 	color: #6f6f6f;
-	background-color: white;
+	background-image: linear-gradient(to bottom, white 80%, #e9e8e9);
 	border: 1px solid #A4A7A4;
 }
 scrollbar slider {
@@ -162,6 +162,7 @@ checkbutton label, radiobutton label {
 }
 check:disabled, radio:disabled {
 	color: #6f6f6f;
+	background-image: linear-gradient(to bottom, white 80%, #e9e8e9);
 }
 check {
 	-gtk-icon-source: url("assets/checkbox-unchecked.png");
@@ -211,7 +212,7 @@ entry {
 	padding: .35em;
 }
 entry:disabled {
-	background-color: shade(@theme_bg_color, 1.05);
+	background-color: #eeebe7;
 }
 
 /****************
@@ -250,7 +251,7 @@ combobox button:first-child arrow {
 menubar {
 	border-image: url("assets/button.png") 2 / 2px stretch;
 	-GtkWidget-window-dragging: true;
-	padding: 1px;
+	padding-left: 0.3em;
 }
 menubar decoration,
 .popup decoration {
@@ -379,7 +380,6 @@ notebook.frame > .frame:active {
 	border: 1px solid black;
 }
 notebook header.top tab:checked {
-	margin-bottom: -1px;
 	margin-top: -2px;
 }
 notebook header.bottom tab:checked {
@@ -455,12 +455,22 @@ popover .flat {
  ***********/
 toolbar {
 	border-image: url("assets/button.png") 2 / 2px stretch;
-	padding: 3px;
+	padding: 1px;
 }
 toolbar separator {
 	border-image: url("assets/separator-vertical.png") 1 / 1px stretch;
 	margin: 5px;
 	padding: 1px;
+}
+toolbar button {
+	background: none;
+	border: 1px solid transparent;
+}
+toolbar button:disabled {
+	background: none;
+	border: 1px solid transparent;
+	text-shadow: 1px 1px @theme_base_color;
+	-gtk-icon-effect: dim;
 }
 /*************
  * statusbar *
