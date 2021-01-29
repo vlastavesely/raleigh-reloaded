@@ -98,6 +98,9 @@ button.color * {
 	margin: 0 .3em;
 	min-height: 1.2em;
 }
+button.toggle:checked:disabled  {
+	border: 1px solid #A4A7A4;
+}
 
 /**************
  * scrollbars *
