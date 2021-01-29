@@ -27,7 +27,6 @@
 	color: @theme_fg_color;
 }
 *:disabled {
-	color: shade(@theme_bg_color, .6);
 	text-shadow: 1px 1px @theme_base_color;
 	-gtk-icon-effect: dim;
 }
@@ -469,8 +468,6 @@ toolbar button {
 toolbar button:disabled {
 	background: none;
 	border: 1px solid transparent;
-	text-shadow: 1px 1px @theme_base_color;
-	-gtk-icon-effect: dim;
 }
 /*************
  * statusbar *
@@ -591,9 +588,10 @@ scale slider {
 	border-radius: 3px;
 	border: 1px solid black;
 }
+scale slider:disabled,
 scale trough:disabled {
-	background-color: white;
 	color: #6f6f6f;
+	background-image: linear-gradient(to bottom, white 80%, #e9e8e9);
 	border: 1px solid #A4A7A4;
 }
 scale.horizontal trough {
