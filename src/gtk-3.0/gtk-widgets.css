@@ -532,8 +532,6 @@ paned > separator {
 }
 paned > separator:hover {
 	background-color: @theme_selected_bg_color;
-	border-radius: 3px;
-	border: 1px solid black;
 }
 paned.vertical > separator {
 	background-image: url("assets/paned-separator-horizontal.png");
