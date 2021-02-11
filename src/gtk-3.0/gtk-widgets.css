@@ -164,7 +164,6 @@ checkbutton label, radiobutton label {
 }
 check:disabled, radio:disabled {
 	color: #6f6f6f;
-	background-image: linear-gradient(to bottom, white 80%, #e9e8e9);
 }
 check {
 	-gtk-icon-source: url("assets/checkbox-unchecked.png");
@@ -571,11 +570,9 @@ scale trough,
 treeview.view.trough,
 treeview.view.trough:selected,
 scrollbar {
-	background-color: shade(@theme_bg_color, .9);
-	border: solid 1px shade(@theme_bg_color, .6);
-	border-bottom-color: white;
-	border-right-color: white;
-	color: @theme_fg_color;
+	background-color: #D2D4D2;
+	border: 1px solid #989B98;
+	border-radius: 3px;
 }
 
 /*********
@@ -602,12 +599,12 @@ scale.vertical trough {
 	padding: 1.2em 0;
 }
 scale.horizontal slider {
-	min-height: 1em;
+	min-height: 0.8em;
 	min-width: 2.4em;
 }
 scale.vertical slider {
 	min-height: 2.4em;
-	min-width: 1em;
+	min-width: 0.8em;
 }
 scale.horizontal mark indicator {
 	background-color: @theme_selected_bg_color;
@@ -648,13 +645,15 @@ progressbar {
 	font-size: .8em;
 }
 progressbar trough {
-	padding: 1px;
+	padding: 2px;
 }
 progressbar progress,
 treeview.view.progressbar {
 	background-color: @theme_selected_bg_color;
 	border: 1px solid black;
 	border-radius: 3px;
+	margin-top: 1px;
+	margin-bottom: 1px;
 }
 progressbar.horizontal,
 progressbar.horizontal progress,
@@ -681,6 +680,7 @@ levelbar block.filled {
 	background-color: @theme_selected_bg_color;
 	border: 1px solid black;
 	border-radius: 3px;
+	margin: 1px;
 }
 
 /**********
