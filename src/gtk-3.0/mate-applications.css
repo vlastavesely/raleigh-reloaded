@@ -19,9 +19,6 @@
 /********
  * Caja *
  ********/
-.caja-navigation-window toolbar combobox button:not(:hover):not(:checked) {
-	border-image: url("assets/button.png") 3 / 3px stretch;
-}
 .caja-navigation-window tab button,
 .caja-navigation-window tab button:active:hover {
 	padding: 0px;
@@ -84,7 +81,6 @@
  * Mate Panel *
  **************/
 PanelToplevel > grid {
-	border-image: url("assets/button.png") 2 / 2px stretch;
 	padding: 2px;
 }
 #clock-applet-button {
@@ -101,9 +97,6 @@ MatePanelAppletFrameDBus {
 PanelToplevel menubar {
 	border: 0;
 	margin: -1px;
-}
-wnck-tasklist button.flat:not(:hover):not(:checked) {
-	border-image: url("assets/button.png") 2 / 2px stretch;
 }
 
 /*****************
