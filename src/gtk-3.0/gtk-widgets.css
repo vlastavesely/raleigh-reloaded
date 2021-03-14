@@ -151,7 +151,7 @@ scrollbar.horizontal button.down {
  * checkboxes *
  **************/
 check, radio {
-	margin: .3em .4em .3em .3em;
+	margin: .3em .4em .2em .3em;
 	min-height: 1em;
 	min-width: 1em;
 }
@@ -186,7 +186,7 @@ check:indeterminated:disabled {
 radio,
 .view.cellradio {
 	-gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked.png"));
-	margin: .3em .4em .3em .3em;
+	margin: .3em .4em .2em .3em;
 	min-height: 1em;
 	min-width: 1em;
 }
@@ -233,8 +233,8 @@ combobox arrow {
 	-gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
 	color: @theme_fg_color;
 	margin: -.1em;
-	min-height: 1.25em;
-	min-width: 1.25em;
+	min-height: 1em;
+	min-width: 1em;
 }
 combobox button:first-child arrow {
 	border-image: url("assets/combobox-arrow-separator.png") 2 / 2px stretch;
