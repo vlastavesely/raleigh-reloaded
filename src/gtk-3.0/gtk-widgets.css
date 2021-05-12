@@ -61,13 +61,12 @@ rubberband {
 /***********
  * buttons *
  ***********/
-button, .button {
-	background-color: #D2D4D2;
-	border: 1px solid #989B98;
-	border-radius: 3px;
-	padding: .35em;
+button.flat {
+	background-color: transparent;
+	border: none;
 }
-button:hover, .button:hover {
+button:not(.flat) , 
+.button {
 	background-color: @theme_selected_bg_color;
 	border: 1px solid black;
 }
@@ -135,15 +134,19 @@ scrollbar.horizontal slider {
 	min-width: .5rem;
 }
 scrollbar.vertical button.up {
+	min-height: 0.5rem;
 	-gtk-icon-source: -gtk-icontheme("pan-up-symbolic");
 }
 scrollbar.vertical button.down {
+	min-height: 0.5rem;
 	-gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
 }
 scrollbar.horizontal button.up {
+	min-width: 0.5rem;
 	-gtk-icon-source: -gtk-icontheme("pan-start-symbolic");
 }
 scrollbar.horizontal button.down {
+	min-width: 0.5rem;
 	-gtk-icon-source: -gtk-icontheme("pan-end-symbolic");
 }
 
