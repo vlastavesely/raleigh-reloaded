@@ -516,9 +516,13 @@ frame { /* LibreOffice combobox's dropdown */
 	border-image: url("assets/menu.png") 3 / 3px stretch;
 	padding: 3px;
 }
-box > frame {
+box > frame,
+grid > frame {
 	border: 0;
 	padding: 0;
+}
+viewport {
+	border-image: url("assets/frame-etched-out.png") 3 / 3px stretch;
 }
 
 /**************
