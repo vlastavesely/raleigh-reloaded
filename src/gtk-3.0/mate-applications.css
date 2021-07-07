@@ -105,6 +105,9 @@ PanelToplevel menubar {
 wnck-tasklist button.flat:not(:hover):not(:checked) {
 	border-image: url("assets/button.png") 2 / 2px stretch;
 }
+.mate-panel-menu-bar {
+	color: @theme_fg_color;
+}
 
 /*****************
  * Mate Terminal *
