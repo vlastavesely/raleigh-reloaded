@@ -517,6 +517,9 @@ grid > frame {
 viewport {
 	border-image: url("assets/frame-etched-out.png") 3 / 3px stretch;
 }
+scrolledwindow > viewport {
+	border: 0;
+}
 
 /**************
  * button box *
