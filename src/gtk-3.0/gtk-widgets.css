@@ -64,6 +64,7 @@ rubberband {
 button, .button {
 	background: @theme_bg_color;
 	border-image: url("assets/button.png") 3 / 3px stretch;
+	color: @theme_fg_color;
 	padding: .35em;
 }
 button:hover, .button:hover {
