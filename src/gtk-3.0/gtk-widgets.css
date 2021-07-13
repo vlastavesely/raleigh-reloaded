@@ -736,19 +736,42 @@ calendar.highlight {
 	border-image: url("assets/frame-etched-out.png") 3 / 3px stretch;
 }
 
+/***********
+ * sidebar *
+ ***********/
+.sidebar {
+	background: white;
+}
+.sidebar label {
+	padding: .3em 1em;
+}
+.sidebar label.highlight {
+	font-weight: bold;
+}
+
 /***********************
  * file chooser dialog *
  ***********************/
+dialog filechooser placessidebar.sidebar {
+	background: @theme_bg_color;
+}
 dialog filechooser placessidebar.sidebar.frame .sidebar-row {
 	padding: .3em 1em;
 }
 dialog filechooser .frame.sidebar .sidebar-row label {
+	padding: 0;
 	padding-left: .8em;
 }
 dialog filechooser placessidebar button {
 	background: transparent;
 	border: 0;
 	padding: 0;
+}
+dialog filechooser placessidebar.sidebar viewport {
+	border: none;
+}
+dialog filechooser placessidebar .active {
+	background-color: red;
 }
 dialog filechooser placessidebar *:hover button {
 	background-color: transparent;
