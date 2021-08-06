@@ -515,10 +515,11 @@ grid > frame {
 	border: 0;
 	padding: 0;
 }
-viewport {
+viewport.frame {
 	border-image: url("assets/frame-etched-out.png") 3 / 3px stretch;
 }
-scrolledwindow > viewport {
+scrolledwindow > viewport,
+scrolledwindow > viewport.frame {
 	border: 0;
 }
 
