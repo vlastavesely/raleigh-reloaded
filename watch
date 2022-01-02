@@ -25,6 +25,7 @@ Press ‘Ctrl+C’ to exit.
 
 EOF
 
+mkdir -p $HOME/.themes
 ln -sf $(pwd)/src "$HOME/.themes/$WATCH_NAME"
 test -n "$(which inotifywait)" || {
 	echo >&2 "fatal: executable ‘inotifywait’ not found."
