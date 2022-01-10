@@ -14,6 +14,7 @@ Notes on Compatibility
 ----------------------
 * The theme does support `GTK-2.0` and `GTK-3.20` but not the older `GTK-3.*` versions.
 * The same widgets are rendered in different ways in `GTK-2.0` and `GTK-3.0`. Therefore, it is not possible to tune all the `GTK-3.0` elements to be absolutely the same like corresponding elements from `GTK-2.0`.
+* Some programs require additional hacks that cannot be integrated into the main stylesheet. In those cases, the user must use a program-specific stylesheet, if the program supports it. For more information about some known cases, see the [doc](doc) directory.
 
 
 Licensing Notice

@@ -1,0 +1,29 @@
+The Eclipse IDE needs some extra hacks to improve its appearance. As there are
+no CSS classes on the UI elements in question, the problem must be solved with
+an external stylesheet. To apply the styles, add the following two directives
+into your ‘eclipse.ini’:
+
+-Dorg.eclipse.swt.internal.gtk.noThemingFixes
+-Dorg.eclipse.swt.internal.gtk.cssFile=<PATH-TO-THE-STYLE>/eclipse.css
+
+And then create the stylesheet with the following content:
+
+toolbar {
+  border: 0;
+}
+toolbar button {
+  background: none;
+}
+toolbar button.flat:hover {
+  background: #eeebe7;
+}
+toolbar button.flat:active,
+toolbar button.flat:checked {
+  background: #c4c2bd;
+}
+scrolledwindow {
+  border: 0;
+}
+frame {
+  border: 0;
+}
