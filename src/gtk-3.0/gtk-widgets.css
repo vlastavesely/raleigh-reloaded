@@ -771,9 +771,6 @@ dialog filechooser placessidebar button {
 dialog filechooser placessidebar.sidebar viewport {
 	border: none;
 }
-dialog filechooser placessidebar .active {
-	background-color: red;
-}
 dialog filechooser placessidebar *:hover button {
 	background-color: transparent;
 }
