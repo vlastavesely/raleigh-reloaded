@@ -1,0 +1,98 @@
+/********
+ * Tabs *
+ ********/
+#tabbrowser-tabs {
+  background: #c8c5be;
+  padding-left: 3px;
+  padding-top: 3px;
+}
+.tabbrowser-tab {
+  padding-inline: 0 !important;
+}
+tab .tab-content {
+  border-image: url("notebook-tab-top.png") 2 / 2px stretch;
+  margin-top: 2px;
+}
+tab[selected] .tab-content {
+  margin-top: 0;
+}
+.tab-background {
+  margin-block: 0 !important;
+}
+#nav-bar:not([tabs-hidden="true"]) {
+  box-shadow: 0 calc(-1 * var(--tabs-navbar-shadow-size)) 0 white !important;
+}
+.close-icon:hover {
+  background: #e6e5e1 !important;
+  fill-opacity: .5 !important;
+}
+
+/***********
+ * Toolbar *
+ ***********/
+#nav-bar {
+  padding: 3px !important;
+}
+#nav-bar toolbarbutton,
+#nav-bar toolbaritem {
+  padding: 0 !important;
+}
+#nav-bar toolbarbutton:not([disabled]):hover,
+toolbar toolbarbutton:not([disabled]):hover,
+findbar toolbarbutton:not([disabled]):hover {
+  background: #e6e5e1 !important;
+  border-image: url("button-hover.png") 2 / 2px stretch;
+}
+#nav-bar toolbarbutton:not([disabled])[open] {
+  background: #c8c5be !important;
+  border-image: url("button-pressed.png") 2 / 2px stretch;
+}
+toolbarbutton > .toolbarbutton-icon,
+#nav-bar toolbarbutton > .toolbarbutton-badge-stack {
+  background: transparent !important;
+}
+#nav-bar toolbarbutton:not([disabled])[open] {
+  background: #c8c5be !important;
+  border-image: url("button-pressed.png") 2 / 2px stretch;
+}
+
+/***********
+ * URL Bar *
+ ***********/
+#urlbar {
+  top: 0 !important;
+}
+#urlbar > #urlbar-background {
+  animation-duration: 0ms !important;
+  border-image: url("entry.png") 2 / 2px stretch !important;
+  box-shadow: none !important;
+}
+#urlbar[breakout][breakout-extend] {
+  left: 0 !important;
+  width: 100% !important;
+}
+#urlbar-input-container {
+  height: calc(var(--urlbar-height)) !important;
+  padding: 0 !important;
+}
+
+/************
+ * Find Bar *
+ ************/
+.findbar-textbox {
+  border-image: url("entry.png") 2 / 2px stretch !important;
+}
+.findbar-textbox[status="notfound"] {
+  background: #f03838 !important;
+  color: white !important;
+  outline: 0 !important;
+}
+.checkbox-check {
+  background: url(check.png) no-repeat center !important;
+  border: none !important
+  height: 15px !important;
+  width: 15px !important;
+}
+.checkbox-check[checked=true] {
+  background: url(check-checked.png) no-repeat center !important;
+}
