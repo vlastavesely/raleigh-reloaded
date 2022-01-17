@@ -22,9 +22,16 @@ tab[selected] .tab-content {
 #nav-bar:not([tabs-hidden="true"]) {
   box-shadow: 0 calc(-1 * var(--tabs-navbar-shadow-size)) 0 white !important;
 }
+.tab-close-button {
+  margin-inline-end: 0 !important;
+  width: 16px !important;
+  height: 16px !important;
+  padding: 3px !important;
+}
 .close-icon:hover {
   background: #e6e5e1 !important;
-  fill-opacity: .5 !important;
+  fill-opacity: 1 !important;
+  border-radius: 0 !important;
 }
 
 /***********
@@ -66,6 +73,7 @@ toolbarbutton > .toolbarbutton-icon,
   animation-duration: 0ms !important;
   border-image: url("entry.png") 2 / 2px stretch !important;
   box-shadow: none !important;
+  outline: none !important;
 }
 #urlbar[breakout][breakout-extend] {
   left: 0 !important;
