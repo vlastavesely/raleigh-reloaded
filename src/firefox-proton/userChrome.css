@@ -85,7 +85,10 @@ toolbarbutton > .toolbarbutton-icon,
 .findbar-textbox[status="notfound"] {
   background: #f03838 !important;
   color: white !important;
-  outline: 0 !important;
+  outline: none !important;
+}
+.findbar-textbox:focus {
+  outline: none !important;
 }
 .checkbox-check {
   background: url(check.png) no-repeat center !important;
@@ -95,4 +98,8 @@ toolbarbutton > .toolbarbutton-icon,
 }
 .checkbox-check[checked=true] {
   background: url(check-checked.png) no-repeat center !important;
+}
+.findbar-find-status[status="notfound"] {
+  color: #f03838 !important;
+  opacity: 1 !important;
 }
