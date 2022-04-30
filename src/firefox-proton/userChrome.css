@@ -1,6 +1,9 @@
 /********
  * Tabs *
  ********/
+#TabsToolbar .toolbar-items {
+  background: #c8c5be;
+}
 #tabbrowser-tabs {
   background: #c8c5be;
   padding-left: 3px;
@@ -33,6 +36,16 @@ tab[selected] .tab-content {
   fill-opacity: 1 !important;
   border-radius: 0 !important;
 }
+#alltabs-button > stack {
+  background: transparent !important;
+}
+#nav-bar #allTabsMenu-allTabsView toolbarbutton {
+  border: 0 !important;
+  padding: .4rem .6rem !important;
+}
+#allTabsMenu-allTabsViewTabs toolbarbutton {
+  margin: 0 !important;
+}
 
 /***********
  * Toolbar *
@@ -57,10 +70,6 @@ findbar toolbarbutton:not([disabled]):hover {
 toolbarbutton > .toolbarbutton-icon,
 #nav-bar toolbarbutton > .toolbarbutton-badge-stack {
   background: transparent !important;
-}
-#nav-bar toolbarbutton:not([disabled])[open] {
-  background: #c8c5be !important;
-  border-image: url("button-pressed.png") 2 / 2px stretch;
 }
 
 /***********
