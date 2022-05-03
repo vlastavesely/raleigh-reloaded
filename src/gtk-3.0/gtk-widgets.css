@@ -227,13 +227,12 @@ spinbutton button {
 combobox arrow {
 	-gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
 	color: @theme_fg_color;
-	margin: -.1em;
-	min-height: 1.5em;
-	min-width: 1.5em;
+	margin: -2px;
 }
 combobox button:first-child arrow {
 	border-image: url("assets/combobox-arrow-separator.png") 2 / 2px stretch;
-	padding-left: .5em;
+	padding: 3px;
+	padding-left: 5px;
 }
 
 /*********
@@ -275,13 +274,12 @@ menu separator {
 	min-height: 1px;
 	margin: .2em .4em;
 }
-menuitem > arrow,
 menuitem > image {
 	min-height: 1em;
 	min-width: 1em;
 }
 menuitem > arrow {
-	font-size: 1.4em;
+	font-size: 1.2em;
 	margin: -.2em 0 -.2em 1em;
 	-gtk-icon-source: -gtk-icontheme("pan-end-symbolic");
 }
@@ -375,12 +373,18 @@ notebook.frame > .frame {
 	padding: .15rem;
 }
 
+/**********
+ * Arrows *
+ **********/
+arrow {
+	min-width: 1.2rem;
+	min-height: 1.2rem;
+}
+
 /************
  * expander *
  ************/
 expander arrow {
-	min-width: 16px;
-	min-height: 16px;
 	-gtk-icon-source: -gtk-icontheme("pan-end-symbolic");
 }
 expander arrow:checked {
