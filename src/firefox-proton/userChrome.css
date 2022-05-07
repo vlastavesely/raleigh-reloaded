@@ -5,7 +5,7 @@
   background: #c8c5be;
 }
 #tabbrowser-tabs {
-  background: #c8c5be;
+  height: 3.2rem;
   padding-left: 3px;
   padding-top: 3px;
 }
@@ -14,10 +14,12 @@
 }
 tab .tab-content {
   border-image: url("notebook-tab-top.png") 2 / 2px stretch;
-  margin-top: 2px;
 }
-tab[selected] .tab-content {
-  margin-top: 0;
+tab.tabbrowser-tab {
+  margin-top: 2px !important;
+}
+tab.tabbrowser-tab[selected] {
+  margin-top: 0 !important;
 }
 .tab-background {
   margin-block: 0 !important;
@@ -35,6 +37,10 @@ tab[selected] .tab-content {
   background: #e6e5e1 !important;
   fill-opacity: 1 !important;
   border-radius: 0 !important;
+}
+#scrollbutton-up,
+#scrollbutton-down {
+  padding: 0 !important;
 }
 #alltabs-button > stack {
   background: transparent !important;
