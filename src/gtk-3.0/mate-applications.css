@@ -80,6 +80,16 @@
 	padding-right: 5px;
 }
 
+/*********
+ * Marco *
+ *********/
+/* this may cause problems in the future, but there are no selectors
+ * in the alt+tab dialogue... */
+window > frame > box > grid image:selected {
+	background-color: @theme_selected_bg_color;
+	color: @theme_selected_fg_color
+}
+
 /**************
  * Mate Panel *
  **************/
