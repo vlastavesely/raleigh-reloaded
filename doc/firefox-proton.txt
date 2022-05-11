@@ -1,0 +1,9 @@
+To enable CSS fixes in Firefox with the Proton UI, create a new directory
+called ‘chrome’ in your Firefox profile directory and copy the files from
+the ‘src/firefox-proton’ into it.
+
+Once copied, you need to enable the stylesheet in your preferences:
+
+  toolkit.legacyUserProfileCustomizations.stylesheets = true
+
+After that, Firefox requires restart to reload the styles.
