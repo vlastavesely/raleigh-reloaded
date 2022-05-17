@@ -283,6 +283,14 @@ menuitem > arrow {
 	margin: -.2em 0 -.2em 1em;
 	-gtk-icon-source: -gtk-icontheme("pan-end-symbolic");
 }
+menu arrow.top,
+.menu arrow.top {
+	-gtk-icon-source: -gtk-icontheme("pan-up-symbolic");
+}
+menu arrow.bottom,
+.menu arrow.bottom {
+	-gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
+}
 
 /*************
  * notebooks *
