@@ -84,7 +84,7 @@ toolbarbutton > .toolbarbutton-icon,
 #urlbar {
   top: 0 !important;
 }
-#urlbar > #urlbar-background {
+#urlbar > #urlbar-background, #searchbar {
   animation-duration: 0ms !important;
   border-image: url("entry.png") 2 / 2px stretch !important;
   box-shadow: none !important;
