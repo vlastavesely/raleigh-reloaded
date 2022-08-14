@@ -68,6 +68,9 @@
 .caja-navigation-window statusbar frame {
 	border: 0;
 }
+#caja-extra-view-widget button.flat {
+	border-image: url("assets/button.png") 3 / 3px stretch;
+}
 
 /*********
  * Pluma *
