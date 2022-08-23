@@ -844,6 +844,9 @@ colorchooser .popover {
 	background: @theme_bg_color;
 	border-image: url("assets/button.png") 3 / 3px stretch;
 }
+*:disabled colorswatch {
+  opacity: .4;
+}
 
 /****************
  * print dialog *
