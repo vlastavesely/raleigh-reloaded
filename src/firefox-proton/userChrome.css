@@ -63,13 +63,11 @@ tab.tabbrowser-tab[selected] {
 #nav-bar toolbaritem {
   padding: 0 !important;
 }
-#nav-bar toolbarbutton:not([disabled]):hover,
-toolbar toolbarbutton:not([disabled]):hover,
-findbar toolbarbutton:not([disabled]):hover {
+toolbarbutton:not([disabled]):not([open]):hover {
   background: #e6e5e1 !important;
   border-image: url("button-hover.png") 2 / 2px stretch;
 }
-#nav-bar toolbarbutton:not([disabled])[open] {
+toolbarbutton:not([disabled])[open] {
   background: #c8c5be !important;
   border-image: url("button-pressed.png") 2 / 2px stretch;
 }
@@ -97,6 +95,15 @@ toolbarbutton > .toolbarbutton-icon,
 #urlbar-input-container {
   height: calc(var(--urlbar-height)) !important;
   padding: 0 !important;
+}
+
+/*************
+ * Bookmarks *
+ *************/
+toolbarseparator::before {
+  border-image: url("separator-vertical.png") 1 / 1px stretch !important;
+  margin: 3px 0;
+  width: 2px;
 }
 
 /************
