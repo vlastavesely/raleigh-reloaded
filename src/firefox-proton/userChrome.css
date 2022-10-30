@@ -122,7 +122,7 @@ toolbarseparator::before {
 }
 .checkbox-check {
   background: url(check.png) no-repeat center !important;
-  border: none !important
+  border: none !important;
   height: 15px !important;
   width: 15px !important;
 }
