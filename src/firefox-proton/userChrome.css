@@ -63,7 +63,9 @@ tab.tabbrowser-tab[selected] {
 #nav-bar toolbaritem {
   padding: 0 !important;
 }
-toolbarbutton:not([disabled]):not([open]):hover {
+#nav-bar toolbarbutton:not([disabled]):not([open]):hover,
+toolbar toolbarbutton:not([disabled]):not([open]):hover,
+findbar toolbarbutton:not([disabled]):not([open]):hover {
   background: #e6e5e1 !important;
   border-image: url("button-hover.png") 2 / 2px stretch;
 }
