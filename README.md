@@ -17,6 +17,11 @@ Notes on Compatibility
 * Some programs require additional hacks that cannot be integrated into the main stylesheet. In those cases, the user must use a program-specific stylesheet, if the program supports it. For more information about some known cases, see the [doc](doc) directory.
 
 
+Donations
+---------
+If you like this project and it is useful to you, consider sending a donation to the following Bitcoin address: **1LXAkkvKodKB237yayzCTYAsb8tYawGfHz**
+
+
 Licensing Notice
 ----------------
 This software is released under the terms of the GPL license version 2 as published by the Free Software Foundation. You can freely redistribute and/or modify the software under the terms of the license.
