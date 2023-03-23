@@ -880,3 +880,19 @@ spinner:checked {
 	opacity: 1;
 	animation: spin 1s linear infinite;
 }
+
+/*******
+ * OSD *
+ *******/
+.background.osd {
+	background: rgba(0,0,0,.5);
+	border-radius: 1rem;
+}
+.osd .trough {
+	background: rgba(255,255,255,.5);
+	border-radius: 6px;
+}
+.osd .progressbar {
+	background: white;
+	border-radius: 6px;
+}
