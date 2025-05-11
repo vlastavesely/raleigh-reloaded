@@ -761,7 +761,7 @@ actionbar {
  * sidebar *
  ***********/
 .sidebar {
-	background: white;
+	background: @theme_base_color;
 }
 .sidebar label {
 	padding: .3em 1em;
@@ -769,12 +769,18 @@ actionbar {
 .sidebar label.highlight {
 	font-weight: bold;
 }
+.sidebar.frame > .frame {
+    padding: 2px;
+}
 
 /***********************
  * file chooser dialog *
  ***********************/
 dialog filechooser placessidebar.sidebar {
 	background: @theme_bg_color;
+}
+dialog filechooser placessidebar.sidebar.frame {
+    padding: 1px;
 }
 dialog filechooser placessidebar.sidebar.frame .sidebar-row {
 	padding: .3em 1em;
